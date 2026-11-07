@@ -1,0 +1,24 @@
+/*
+Theme Name: Abidar Group
+Theme URI: https://abidargroup.com/
+Author: Abidar Group
+Author URI: https://abidargroup.com/
+Description: A premium, multilingual (Persian / English / Chinese) corporate WordPress theme for mining, oil & gas and natural stone companies. Ships with dedicated Elementor widgets, Elementor header & footer (Theme Builder) support, a full theme options panel and a complete one-click demo.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.7
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: abidar
+Tags: business, corporate, one-column, two-columns, custom-colors, custom-logo, custom-menu, editor-style, featured-images, full-width-template, rtl-language-support, threaded-comments, translation-ready
+
+Abidar Group WordPress Theme, Copyright 2026 Abidar Group.
+Abidar Group is distributed under the terms of the GNU GPL v2 or later.
+
+This file is intentionally minimal: all front-end styling lives in
+assets/css/main.css and assets/css/widgets.css so that it can be
+versioned, cached and (optionally) rebuilt by the build pipeline.
+*/
+
+/* Base typographic reset is loaded from assets/css/main.css */

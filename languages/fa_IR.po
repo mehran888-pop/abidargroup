@@ -1,0 +1,1624 @@
+# Abidar Group theme translation template.
+msgid ""
+msgstr ""
+"Project-Id-Version: Abidar Group 1.0.0\n"
+"Report-Msgid-Bugs-To: https://abidargroup.com/\n"
+"POT-Creation-Date: 2026-11-07T00:00:00+00:00\n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Domain: abidar\n"
+
+#: inc/admin/options.php
+msgid "/* your CSS here */"
+msgstr ""
+
+#: inc/admin/demo-import.php
+msgid "3 testimonials and 3 news posts"
+msgstr ""
+
+#: inc/admin/demo-import.php
+msgid "4 services and 4 team members"
+msgstr ""
+
+#: inc/admin/demo-import.php
+msgid "6 demo projects with images and details"
+msgstr ""
+
+#: inc/admin/demo-import.php
+msgid "7 pages: Home, About, Services, Projects, Team, Contact, News"
+msgstr ""
+
+#: inc/admin/options.php inc/elementor/init.php
+msgid "Abidar"
+msgstr "عبی‌دار"
+
+#: inc/elementor/init.php
+msgid "Abidar Accent"
+msgstr ""
+
+#: inc/elementor/init.php
+msgid "Abidar Canvas (no header/footer)"
+msgstr ""
+
+#: inc/elementor/init.php
+msgid "Abidar Group"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Abidar Group — Theme options"
+msgstr ""
+
+#: inc/elementor/init.php
+msgid "Abidar Ink"
+msgstr ""
+
+#: inc/elementor/init.php
+msgid "Abidar Primary"
+msgstr ""
+
+#: inc/elementor/init.php
+msgid "Abidar Sand"
+msgstr ""
+
+#: inc/blocks.php
+msgid "Abidar section"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Abidar theme"
+msgstr "قالب عبی‌دار"
+
+#: inc/widgets/class-abidar-contact-widget.php
+msgid "Abidar — Contact card"
+msgstr ""
+
+#: inc/post-types.php
+msgid "Abidar → Theme options"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "About"
+msgstr ""
+
+#: inc/admin/options.php inc/elementor/widgets/about.php
+msgid "About split"
+msgstr ""
+
+#: inc/setup.php
+msgid "About us"
+msgstr "درباره ما"
+
+#: inc/admin/options.php
+msgid "Accent (ochre)"
+msgstr ""
+
+#: inc/elementor/widgets/lang-switcher.php
+msgid "Active background"
+msgstr "پس‌زمینه فعال"
+
+#: inc/elementor/widgets/lang-switcher.php
+msgid "Active colour"
+msgstr "رنگ فعال"
+
+#: inc/post-types.php
+msgid "Add new project"
+msgstr ""
+
+#: inc/post-types.php
+msgid "Add new service"
+msgstr ""
+
+#: inc/post-types.php
+msgid "Add team member"
+msgstr ""
+
+#: inc/post-types.php
+msgid "Add testimonial"
+msgstr ""
+
+#: inc/admin/options.php inc/elementor/widgets/contact.php
+msgid "Address"
+msgstr "آدرس"
+
+#: inc/widgets/class-abidar-contact-widget.php
+msgid "Address, phone, email and hours from the theme options."
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Advanced"
+msgstr "پیشرفته"
+
+#: inc/elementor/class-abidar-widget-base.php
+#: inc/elementor/widgets/lang-switcher.php
+msgid "Alignment"
+msgstr "ترازبندی"
+
+#: inc/admin/options.php
+msgid ""
+"All widgets live in the “Abidar” category of the Elementor panel. They use "
+"the theme palette by default and expose full Style tab controls."
+msgstr ""
+
+#: inc/admin/options.php inc/elementor/widgets/counters.php
+msgid "Animated counters"
+msgstr ""
+
+#: inc/elementor/widgets/accordion.php
+msgid "Answer"
+msgstr "پاسخ"
+
+#: inc/elementor/widgets/accordion.php
+msgid "Answer colour"
+msgstr ""
+
+#: inc/elementor/widgets/cta.php
+msgid "Appearance"
+msgstr "ظاهر"
+
+#: inc/elementor/widgets/testimonials.php
+msgid "Avatar"
+msgstr ""
+
+#: template-parts/footer/default.php
+msgid "Back to top"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Back-to-top button"
+msgstr "دکمه بازگشت به بالا"
+
+#: inc/elementor/widgets/hero.php inc/elementor/widgets/posts.php
+#: inc/elementor/widgets/services.php inc/elementor/widgets/testimonials.php
+msgid "Background"
+msgstr "پس‌زمینه"
+
+#: inc/elementor/widgets/cta.php inc/elementor/widgets/hero.php
+#: inc/elementor/widgets/page-title.php
+msgid "Background image"
+msgstr "تصویر پس‌زمینه"
+
+#: inc/elementor/widgets/counters.php
+msgid "Background texture"
+msgstr ""
+
+#: inc/elementor/widgets/about.php
+msgid "Badge background"
+msgstr ""
+
+#: inc/elementor/widgets/about.php
+msgid "Badge number"
+msgstr ""
+
+#: inc/elementor/widgets/about.php
+msgid "Badge text"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Base font size (px)"
+msgstr "اندازه پایه فونت (پیکسل)"
+
+#: inc/admin/options.php
+msgid "Blog"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Blog & SEO"
+msgstr "وبلاگ و سئو"
+
+#: inc/admin/options.php
+msgid ""
+"Blog cards queried by category/count, with localised dates and read time."
+msgstr ""
+
+#: inc/setup.php
+msgid "Blog sidebar"
+msgstr "سایدبار وبلاگ"
+
+#: inc/admin/options.php
+msgid "Body font"
+msgstr "فونت متن"
+
+#: inc/admin/options.php
+msgid "Body text"
+msgstr ""
+
+#: inc/elementor/class-abidar-widget-base.php
+#: inc/elementor/widgets/services.php
+msgid "Border radius"
+msgstr "گردی گوشه‌ها"
+
+#: inc/admin/options.php
+msgid "Branding"
+msgstr "برندینگ"
+
+#: inc/template-tags.php
+msgid "Breadcrumb"
+msgstr ""
+
+#: inc/admin/demo-import.php
+msgid "Build with Elementor"
+msgstr ""
+
+#: inc/elementor/widgets/contact.php
+msgid "Button background"
+msgstr ""
+
+#: inc/elementor/widgets/about.php inc/elementor/widgets/cta.php
+msgid "Button label"
+msgstr "متن دکمه"
+
+#: inc/elementor/widgets/about.php inc/elementor/widgets/cta.php
+msgid "Button link"
+msgstr "لینک دکمه"
+
+#: inc/elementor/widgets/hero.php
+msgid "Button radius"
+msgstr ""
+
+#: inc/elementor/widgets/hero.php
+msgid "Buttons"
+msgstr ""
+
+#: inc/demo-content.php
+msgid "Buyers judge stone long before it reaches the site."
+msgstr ""
+
+#: inc/admin/options.php inc/elementor/widgets/cta.php
+msgid "Call to action"
+msgstr ""
+
+#: inc/elementor/widgets/lang-switcher.php inc/elementor/widgets/marquee.php
+msgid "Caption"
+msgstr "زیرنویس"
+
+#: inc/elementor/widgets/posts.php inc/elementor/widgets/services.php
+#: inc/elementor/widgets/testimonials.php
+msgid "Card"
+msgstr "کارت"
+
+#: inc/elementor/widgets/services.php
+msgid "Card style"
+msgstr "سبک کارت"
+
+#: inc/elementor/widgets/projects.php
+msgid "Category chip background"
+msgstr ""
+
+#: inc/elementor/widgets/posts.php
+msgid "Category slug (optional)"
+msgstr "نامک دسته (اختیاری)"
+
+#: inc/elementor/widgets/counters.php inc/elementor/widgets/hero.php
+msgid "Cell background"
+msgstr ""
+
+#: inc/elementor/widgets/counters.php
+msgid "Cell radius"
+msgstr ""
+
+#: inc/elementor/class-abidar-widget-base.php
+#: inc/elementor/widgets/lang-switcher.php inc/elementor/widgets/team.php
+msgid "Center"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Centered logo"
+msgstr ""
+
+#: inc/elementor/widgets/about.php
+msgid "Checklist"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Classic (logo left, menu right)"
+msgstr ""
+
+#: inc/elementor/widgets/testimonials.php inc/meta-boxes.php
+msgid "Client"
+msgstr "کاربر"
+
+#: inc/admin/options.php inc/elementor/widgets/marquee.php
+msgid "Client marquee"
+msgstr ""
+
+#: template-parts/header/default.php
+msgid "Close"
+msgstr "بستن"
+
+#: inc/demo-content.php
+msgid ""
+"Collars, surveys and assay data must be reconciled before any block model is"
+" built. In our projects we spend two to three weeks on validation alone."
+msgstr ""
+
+#: inc/elementor/widgets/hero.php inc/elementor/widgets/page-title.php
+msgid "Colour"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Colours"
+msgstr "رنگ‌ها"
+
+#: inc/elementor/widgets/counters.php inc/elementor/widgets/services.php
+#: inc/elementor/widgets/team.php inc/elementor/widgets/testimonials.php
+msgid "Columns"
+msgstr "ستون‌ها"
+
+#: comments.php
+msgid "Comments are closed."
+msgstr "دیدگاه‌ها بسته است."
+
+#: inc/ajax.php
+msgid "Company"
+msgstr "شرکت"
+
+#: inc/meta-boxes.php
+msgid "Completed"
+msgstr "تکمیل‌شده"
+
+#: inc/elementor/widgets/process.php
+msgid "Connector line"
+msgstr ""
+
+#: inc/demo-content.php
+msgid ""
+"Consistency between blocks matters more than the absolute quality of a "
+"single slab."
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Contact & forms"
+msgstr ""
+
+#: inc/admin/options.php inc/elementor/widgets/contact.php
+msgid "Contact block"
+msgstr ""
+
+#: inc/admin/options.php
+msgid ""
+"Contact cards + working contact form (AJAX, honeypot, localised labels)."
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Contact details"
+msgstr "اطلاعات تماس"
+
+#: inc/widgets/class-abidar-contact-widget.php
+msgid "Contact details come from Abidar → Theme options → Contact details."
+msgstr ""
+
+#: inc/setup.php
+msgid "Contact us"
+msgstr "تماس با ما"
+
+#: inc/elementor/widgets/about.php inc/elementor/widgets/accordion.php
+#: inc/elementor/widgets/contact.php inc/elementor/widgets/counters.php
+#: inc/elementor/widgets/cta.php inc/elementor/widgets/hero.php
+#: inc/elementor/widgets/lang-switcher.php inc/elementor/widgets/marquee.php
+#: inc/elementor/widgets/page-title.php inc/elementor/widgets/posts.php
+#: inc/elementor/widgets/process.php inc/elementor/widgets/projects.php
+#: inc/elementor/widgets/services.php inc/elementor/widgets/team.php
+#: inc/elementor/widgets/testimonials.php
+msgid "Content"
+msgstr "محتوا"
+
+#: inc/elementor/widgets/hero.php
+msgid "Content max width"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Copyright line"
+msgstr "خط کپی‌رایت"
+
+#: inc/elementor/widgets/counters.php
+msgid "Counters"
+msgstr "شمارنده‌ها"
+
+#: inc/admin/options.php
+msgid "Custom CSS"
+msgstr "CSS سفارشی"
+
+#: inc/elementor/widgets/page-title.php
+msgid "Custom title"
+msgstr "عنوان دلخواه"
+
+#: inc/post-types.php
+msgid "Customise colours, fonts and copy in the theme options panel:"
+msgstr ""
+
+#: inc/elementor/widgets/marquee.php
+msgid "Dark background"
+msgstr "پس‌زمینه تیره"
+
+#: inc/admin/options.php
+msgid ""
+"Dark or accent CTA band with headline, text, button and phone link, plus "
+"optional background image."
+msgstr ""
+
+#: inc/admin/options.php inc/elementor/widgets/counters.php
+#: inc/elementor/widgets/process.php
+msgid "Dark section"
+msgstr "بخش تیره"
+
+#: inc/setup.php
+msgid "Deep Teal"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Default language"
+msgstr "زبان پیش‌فرض"
+
+#: inc/admin/demo-import.php inc/admin/options.php
+msgid "Demo content"
+msgstr "محتوای نمونه"
+
+#: inc/admin/demo-import.php
+msgid "Demo content installed. Your site is ready to customise."
+msgstr ""
+
+#: inc/admin/options.php inc/elementor/class-abidar-widget-base.php
+#: inc/elementor/widgets/cta.php inc/elementor/widgets/hero.php
+#: inc/elementor/widgets/process.php inc/elementor/widgets/services.php
+msgid "Description"
+msgstr "توضیحات"
+
+#: inc/elementor/widgets/services.php
+msgid "Description colour"
+msgstr ""
+
+#: inc/meta-boxes.php
+msgid "Details"
+msgstr "جزئیات"
+
+#: inc/elementor/widgets/process.php
+msgid "Dot background"
+msgstr ""
+
+#: inc/elementor/widgets/process.php
+msgid "Dot colour"
+msgstr ""
+
+#: inc/elementor/widgets/lang-switcher.php
+msgid "Dropdown"
+msgstr ""
+
+#: inc/meta-boxes.php
+msgid "Duration"
+msgstr "مدت"
+
+#: inc/admin/options.php
+msgid ""
+"Edit any string in all three languages. Empty fields fall back to the built-"
+"in translation."
+msgstr ""
+
+#: inc/post-types.php
+msgid "Edit project"
+msgstr ""
+
+#: inc/post-types.php
+msgid "Edit service"
+msgstr ""
+
+#: inc/post-types.php
+msgid "Edit team member"
+msgstr ""
+
+#: inc/admin/demo-import.php
+msgid "Edit the Home page with Elementor."
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Elementor widgets"
+msgstr "المان‌های المنتور"
+
+#: inc/admin/options.php
+msgid "Elementor widgets in this theme"
+msgstr ""
+
+#: inc/admin/options.php inc/ajax.php inc/elementor/widgets/contact.php
+#: inc/elementor/widgets/team.php inc/meta-boxes.php
+msgid "Email"
+msgstr "ایمیل"
+
+#: inc/demo-content.php
+msgid "Empowered stop-work authority"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Enable preloader"
+msgstr "فعال‌سازی پری‌لودر"
+
+#: inc/elementor/class-abidar-widget-base.php
+#: inc/elementor/widgets/lang-switcher.php
+msgid "End"
+msgstr ""
+
+#: inc/post-types.php
+msgid "Enquiries"
+msgstr ""
+
+#: inc/post-types.php
+msgid "Enquiry"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Excerpt length (words)"
+msgstr "طول خلاصه (کلمه)"
+
+#: inc/admin/demo-import.php
+msgid ""
+"Existing content is never deleted. Importing twice creates duplicates, so "
+"run it once."
+msgstr ""
+
+#: inc/elementor/class-abidar-widget-base.php inc/elementor/widgets/cta.php
+#: inc/elementor/widgets/hero.php inc/elementor/widgets/page-title.php
+msgid "Eyebrow"
+msgstr "متن بالای عنوان"
+
+#: inc/elementor/class-abidar-widget-base.php
+msgid "Eyebrow colour"
+msgstr ""
+
+#: inc/admin/options.php
+msgid ""
+"FA / EN / ZH switcher styled as inline, dropdown or flags — usable in "
+"header, footer or any section."
+msgstr ""
+
+#: inc/admin/options.php inc/elementor/widgets/accordion.php
+msgid "FAQ accordion"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Favicon"
+msgstr "فاوآیکون"
+
+#: inc/elementor/widgets/projects.php
+msgid "Feature first project (wide)"
+msgstr "نمایش پروژه اول به‌صورت بزرگ"
+
+#: inc/admin/options.php
+msgid "Filter strings…"
+msgstr ""
+
+#: inc/setup.php
+msgid "First footer widget column."
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Footer"
+msgstr "فوتر"
+
+#: inc/admin/options.php
+msgid "Footer about text"
+msgstr "متن درباره در فوتر"
+
+#: inc/setup.php
+msgid "Footer column 1"
+msgstr "ستون اول فوتر"
+
+#: inc/setup.php
+msgid "Footer column 2"
+msgstr "ستون دوم فوتر"
+
+#: inc/setup.php
+msgid "Footer legal menu"
+msgstr "منوی حقوقی فوتر"
+
+#: inc/admin/demo-import.php inc/setup.php
+msgid "Footer menu"
+msgstr "منوی فوتر"
+
+#: inc/elementor/widgets/contact.php
+msgid "Form"
+msgstr ""
+
+#: inc/elementor/widgets/contact.php
+msgid "Form background"
+msgstr ""
+
+#: inc/admin/options.php
+msgid ""
+"Full-height hero with background image/video, eyebrow, headline, two "
+"buttons, stat strip and scroll cue. Every colour, size and spacing is an "
+"Elementor control."
+msgstr ""
+
+#: inc/meta-boxes.php
+msgid "Gallery image IDs (comma separated)"
+msgstr "شناسه تصاویر گالری (با کاما)"
+
+#: inc/elementor/widgets/marquee.php
+msgid "Gap"
+msgstr ""
+
+#: inc/demo-content.php
+msgid "Geological modelling is the foundation of a predictable mine plan."
+msgstr ""
+
+#: inc/admin/options.php
+msgid ""
+"Go to Templates → Theme Builder → Header (or Footer) → Add New, design it, "
+"and publish. The theme automatically replaces its default header/footer. The"
+" same works for single project and archive templates."
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Google Maps embed URL"
+msgstr "آدرس embed نقشه گوگل"
+
+#: inc/admin/options.php
+msgid "Header"
+msgstr "هدر"
+
+#: inc/admin/options.php
+msgid "Header & footer with Elementor"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Header CTA URL"
+msgstr "لینک دکمه هدر"
+
+#: inc/admin/options.php
+msgid "Header CTA label"
+msgstr "متن دکمه هدر"
+
+#: inc/admin/options.php
+msgid "Header layout"
+msgstr "چیدمان هدر"
+
+#: inc/admin/options.php
+msgid "Heading font"
+msgstr "فونت تیترها"
+
+#: inc/admin/options.php
+msgid "Headings / ink"
+msgstr ""
+
+#: inc/elementor/widgets/hero.php
+msgid "Headline"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Hero & homepage"
+msgstr ""
+
+#: inc/admin/options.php inc/elementor/widgets/hero.php
+msgid "Hero slider"
+msgstr ""
+
+#: inc/setup.php
+msgid "Home"
+msgstr "خانه"
+
+#: inc/elementor/widgets/counters.php inc/elementor/widgets/process.php
+#: inc/elementor/widgets/services.php
+msgid "Icon"
+msgstr "آیکون"
+
+#: inc/elementor/widgets/services.php
+msgid "Icon background"
+msgstr "پس‌زمینه آیکون"
+
+#: inc/elementor/widgets/services.php
+msgid "Icon card"
+msgstr ""
+
+#: inc/admin/options.php
+msgid ""
+"Icon cards or image cards for services, with hover states, read-more links "
+"and optional category filter."
+msgstr ""
+
+#: inc/elementor/widgets/counters.php inc/elementor/widgets/services.php
+msgid "Icon colour"
+msgstr "رنگ آیکون"
+
+#: inc/meta-boxes.php
+msgid "Icon key (see inc/icons.php)"
+msgstr "کلید آیکون (inc/icons.php)"
+
+#: inc/elementor/widgets/about.php
+msgid "Image"
+msgstr "تصویر"
+
+#: inc/elementor/widgets/services.php
+msgid "Image (image cards)"
+msgstr ""
+
+#: inc/admin/options.php
+msgid ""
+"Image + text split section with checklist, signature and a floating \"years "
+"of experience\" badge."
+msgstr ""
+
+#: inc/elementor/widgets/services.php
+msgid "Image card"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Infinite scrolling logo strip, with pause-on-hover and speed control."
+msgstr ""
+
+#: inc/setup.php
+msgid "Ink"
+msgstr ""
+
+#: inc/elementor/widgets/lang-switcher.php
+msgid "Inline pills (FA / EN / ZH)"
+msgstr ""
+
+#: inc/elementor/widgets/cta.php
+msgid "Inner padding"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Inner page hero with background image, overlay and breadcrumb trail."
+msgstr ""
+
+#: inc/elementor/widgets/contact.php
+msgid "Input background"
+msgstr ""
+
+#: inc/elementor/init.php
+msgid "Install Elementor"
+msgstr ""
+
+#: inc/admin/demo-import.php inc/post-types.php
+msgid "Install demo content"
+msgstr "نصب محتوای نمونه"
+
+#: inc/elementor/widgets/accordion.php
+msgid "Item background"
+msgstr ""
+
+#: inc/elementor/widgets/lang-switcher.php
+msgid "Item radius"
+msgstr ""
+
+#: inc/elementor/class-abidar-widget-base.php
+#: inc/elementor/widgets/accordion.php inc/elementor/widgets/lang-switcher.php
+#: inc/elementor/widgets/marquee.php
+msgid "Items"
+msgstr "آیتم‌ها"
+
+#: inc/elementor/widgets/hero.php
+msgid "Ken Burns zoom"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Key"
+msgstr ""
+
+#: inc/elementor/widgets/counters.php inc/elementor/widgets/hero.php
+msgid "Label"
+msgstr "برچسب"
+
+#: inc/elementor/widgets/counters.php inc/elementor/widgets/hero.php
+msgid "Label colour"
+msgstr "رنگ برچسب"
+
+#: inc/elementor/widgets/team.php
+msgid "Landscape"
+msgstr ""
+
+#: inc/ajax.php
+msgid "Language"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Language copy editor"
+msgstr "ویرایشگر متن زبان‌ها"
+
+#: inc/setup.php
+msgid "Language menu"
+msgstr "منوی زبان"
+
+#: inc/admin/options.php inc/elementor/widgets/lang-switcher.php
+msgid "Language switcher"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Languages"
+msgstr "زبان‌ها"
+
+#: inc/admin/options.php inc/elementor/widgets/posts.php
+msgid "Latest posts"
+msgstr ""
+
+#: inc/elementor/widgets/services.php
+msgid "Link"
+msgstr "لینک"
+
+#: inc/elementor/widgets/team.php inc/meta-boxes.php
+msgid "LinkedIn URL"
+msgstr "آدرس لینکدین"
+
+#: inc/meta-boxes.php
+msgid "Location"
+msgstr "موقعیت"
+
+#: inc/admin/options.php
+msgid "Logo (dark backgrounds)"
+msgstr "لوگو (پس‌زمینه تیره)"
+
+#: inc/admin/options.php
+msgid "Logo (light backgrounds)"
+msgstr "لوگو (پس‌زمینه روشن)"
+
+#: inc/elementor/widgets/marquee.php
+msgid "Logo image"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Logo width (px)"
+msgstr "عرض لوگو (پیکسل)"
+
+#: inc/admin/options.php
+msgid "Logo, favicon and brand mark."
+msgstr ""
+
+#: inc/elementor/widgets/contact.php
+msgid "Map embed URL"
+msgstr ""
+
+#: inc/elementor/class-abidar-widget-base.php
+msgid "Margin"
+msgstr "فاصله خارجی"
+
+#: inc/elementor/widgets/team.php
+msgid "Member card"
+msgstr ""
+
+#: template-parts/header/default.php
+msgid "Menu"
+msgstr "منو"
+
+#: inc/elementor/widgets/hero.php inc/elementor/widgets/page-title.php
+#: inc/elementor/widgets/projects.php
+msgid "Minimum height"
+msgstr "حداقل ارتفاع"
+
+#: inc/admin/options.php
+msgid "Mining · Oil & Gas · Natural stone"
+msgstr ""
+
+#: template-parts/header/default.php
+msgid "Mobile menu"
+msgstr ""
+
+#: inc/admin/options.php inc/ajax.php inc/elementor/widgets/marquee.php
+#: inc/elementor/widgets/team.php inc/elementor/widgets/testimonials.php
+msgid "Name"
+msgstr "نام"
+
+#: inc/elementor/widgets/team.php
+msgid "Name colour"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Navigation"
+msgstr ""
+
+#: inc/ajax.php
+msgid "New message from the website contact form"
+msgstr ""
+
+#: inc/post-types.php
+msgid "New project"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "No image selected"
+msgstr "تصویری انتخاب نشده"
+
+#: inc/post-types.php
+msgid "No projects found"
+msgstr ""
+
+#: inc/post-types.php
+msgid "No projects in trash"
+msgstr ""
+
+#: inc/elementor/widgets/counters.php inc/elementor/widgets/hero.php
+msgid "Number"
+msgstr "عدد"
+
+#: inc/elementor/widgets/counters.php inc/elementor/widgets/hero.php
+msgid "Number colour"
+msgstr "رنگ عدد"
+
+#: inc/elementor/widgets/posts.php
+msgid "Number of posts"
+msgstr "تعداد مطالب"
+
+#: inc/elementor/widgets/projects.php
+msgid "Number of projects"
+msgstr "تعداد پروژه‌ها"
+
+#: inc/admin/options.php
+msgid ""
+"Numbered timeline of how you work, horizontal or vertical, with connecting "
+"line."
+msgstr ""
+
+#: inc/elementor/widgets/counters.php
+msgid "Numbers"
+msgstr ""
+
+#: inc/setup.php
+msgid "Ochre"
+msgstr ""
+
+#: inc/elementor/widgets/contact.php
+msgid "Office location"
+msgstr ""
+
+#: inc/elementor/widgets/about.php
+msgid "One item per line."
+msgstr ""
+
+#: inc/meta-boxes.php
+msgid "Ongoing"
+msgstr "در حال اجرا"
+
+#: inc/elementor/widgets/accordion.php
+msgid "Only one open at a time"
+msgstr "فقط یکی در هر لحظه باز باشد"
+
+#: inc/elementor/widgets/marquee.php
+msgid "Opacity"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Option tabs"
+msgstr ""
+
+#: inc/elementor/widgets/cta.php
+msgid "Overlay colour (start)"
+msgstr ""
+
+#: inc/elementor/widgets/hero.php
+msgid "Overlay gradient start"
+msgstr ""
+
+#: inc/elementor/widgets/projects.php
+msgid "Overlay strength"
+msgstr ""
+
+#: inc/elementor/class-abidar-widget-base.php
+#: inc/elementor/widgets/services.php
+msgid "Padding"
+msgstr "فاصله داخلی"
+
+#: inc/admin/options.php inc/elementor/widgets/page-title.php
+msgid "Page title & breadcrumb"
+msgstr ""
+
+#: inc/elementor/widgets/marquee.php
+msgid "Partner"
+msgstr ""
+
+#: inc/elementor/widgets/marquee.php
+msgid "Partners"
+msgstr "شرکای تجاری"
+
+#: inc/admin/options.php
+msgid ""
+"Persian, English and Chinese ship with the theme. Edit the copy of each "
+"language below — the site switches instantly."
+msgstr ""
+
+#: inc/admin/options.php inc/ajax.php inc/elementor/widgets/contact.php
+#: inc/meta-boxes.php
+msgid "Phone"
+msgstr "تلفن"
+
+#: inc/elementor/widgets/cta.php
+msgid "Phone number"
+msgstr "شماره تماس"
+
+#: inc/elementor/widgets/team.php
+msgid "Photo"
+msgstr "عکس"
+
+#: inc/elementor/widgets/team.php
+msgid "Photo aspect ratio"
+msgstr ""
+
+#: inc/elementor/widgets/team.php
+msgid "Photo radius"
+msgstr ""
+
+#: inc/elementor/widgets/team.php
+msgid "Portrait"
+msgstr ""
+
+#: inc/demo-content.php
+msgid "Pre-task briefings every shift"
+msgstr ""
+
+#: inc/admin/options.php
+msgid ""
+"Prefer Elementor? Build a header in Templates → Theme Builder → Header and "
+"it will replace this one automatically."
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Primary"
+msgstr ""
+
+#: inc/elementor/widgets/hero.php
+msgid "Primary background"
+msgstr ""
+
+#: inc/elementor/widgets/hero.php
+msgid "Primary button"
+msgstr ""
+
+#: inc/elementor/widgets/hero.php
+msgid "Primary button link"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Primary dark"
+msgstr ""
+
+#: inc/admin/demo-import.php inc/setup.php template-parts/header/default.php
+msgid "Primary menu"
+msgstr "منوی اصلی"
+
+#: inc/admin/demo-import.php
+msgid "Primary menu and footer menu"
+msgstr ""
+
+#: inc/elementor/widgets/hero.php
+msgid "Primary text"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Process"
+msgstr ""
+
+#: inc/admin/options.php inc/elementor/widgets/process.php
+msgid "Process steps"
+msgstr ""
+
+#: inc/elementor/widgets/projects.php
+msgid "Project card"
+msgstr ""
+
+#: inc/post-types.php
+msgid "Project sectors"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Projects"
+msgstr "پروژه‌ها"
+
+#: inc/elementor/widgets/projects.php
+msgid "Projects post type"
+msgstr ""
+
+#: inc/admin/options.php inc/elementor/widgets/projects.php
+msgid "Projects showcase"
+msgstr ""
+
+#: inc/admin/options.php
+msgid ""
+"Pulls the Projects custom post type, with filterable categories, "
+"masonry/grid layouts and hover reveal."
+msgstr ""
+
+#: inc/elementor/widgets/accordion.php
+msgid "Question"
+msgstr "پرسش"
+
+#: inc/elementor/widgets/accordion.php
+msgid "Question colour"
+msgstr ""
+
+#: inc/elementor/widgets/accordion.php
+msgid "Question typography"
+msgstr ""
+
+#: inc/elementor/widgets/accordion.php
+msgid "Questions"
+msgstr "پرسش‌ها"
+
+#: inc/elementor/widgets/testimonials.php
+msgid "Quote"
+msgstr "نقل‌قول"
+
+#: inc/elementor/widgets/testimonials.php
+msgid "Quote colour"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Quote slider/grid with rating stars, client name, role and avatar."
+msgstr ""
+
+#: inc/elementor/widgets/about.php inc/elementor/widgets/accordion.php
+#: inc/elementor/widgets/cta.php inc/elementor/widgets/posts.php
+#: inc/elementor/widgets/projects.php inc/elementor/widgets/testimonials.php
+msgid "Radius"
+msgstr ""
+
+#: inc/elementor/widgets/testimonials.php
+msgid "Rating"
+msgstr "امتیاز"
+
+#: inc/meta-boxes.php
+msgid "Rating (1–5)"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Remove"
+msgstr "حذف"
+
+#: inc/admin/options.php
+msgid ""
+"Repeating stat items with icons, suffix, decimal support and scroll-"
+"triggered animation."
+msgstr ""
+
+#: inc/comments.php
+msgid "Reply"
+msgstr "پاسخ"
+
+#: search.php
+msgid "Results:"
+msgstr ""
+
+#: inc/elementor/widgets/team.php
+msgid "Role"
+msgstr "سمت"
+
+#: inc/elementor/widgets/testimonials.php inc/meta-boxes.php
+msgid "Role / company"
+msgstr "سمت / شرکت"
+
+#: inc/meta-boxes.php
+msgid "Role / position"
+msgstr ""
+
+#: inc/elementor/widgets/team.php
+msgid "Role colour"
+msgstr ""
+
+#: inc/demo-content.php
+msgid "Safety performance is a leading indicator of project performance."
+msgstr ""
+
+#: inc/setup.php
+msgid "Sand"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Save changes"
+msgstr "ذخیره تغییرات"
+
+#: inc/admin/options.php
+msgid ""
+"Schema-ready accordion with smooth expand animation and single-open mode."
+msgstr ""
+
+#: template-parts/header/default.php
+msgid "Search"
+msgstr "جستجو"
+
+#: inc/post-types.php
+msgid "Search projects"
+msgstr ""
+
+#: inc/admin/demo-import.php
+msgid "Search “Abidar” in the widget panel and drag any section in."
+msgstr ""
+
+#: inc/setup.php
+msgid "Second footer widget column."
+msgstr ""
+
+#: inc/elementor/widgets/hero.php
+msgid "Secondary button"
+msgstr ""
+
+#: inc/elementor/widgets/hero.php
+msgid "Secondary button link"
+msgstr ""
+
+#: inc/elementor/class-abidar-widget-base.php
+msgid "Section"
+msgstr "بخش"
+
+#: inc/elementor/class-abidar-widget-base.php
+msgid "Section heading"
+msgstr "عنوان بخش"
+
+#: inc/post-types.php
+msgid "Sector"
+msgstr ""
+
+#: inc/admin/demo-import.php
+msgid "See all widgets"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Select image"
+msgstr "انتخاب تصویر"
+
+#: inc/elementor/widgets/services.php inc/post-types.php
+msgid "Service"
+msgstr "خدمت"
+
+#: inc/admin/options.php inc/elementor/widgets/services.php inc/post-types.php
+#: inc/setup.php
+msgid "Services"
+msgstr "خدمات"
+
+#: inc/admin/options.php inc/elementor/widgets/services.php
+msgid "Services grid"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Settings saved."
+msgstr "تنظیمات ذخیره شد."
+
+#: inc/setup.php
+msgid "Shop sidebar %d"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Show blog sidebar"
+msgstr "نمایش سایدبار وبلاگ"
+
+#: inc/elementor/widgets/page-title.php
+msgid "Show breadcrumb"
+msgstr "نمایش مسیر (بردکرامب)"
+
+#: inc/elementor/widgets/projects.php
+msgid "Show category filter"
+msgstr ""
+
+#: inc/elementor/widgets/services.php
+msgid "Show feature list"
+msgstr ""
+
+#: inc/elementor/widgets/lang-switcher.php
+msgid "Show flags"
+msgstr "نمایش پرچم"
+
+#: inc/elementor/widgets/contact.php
+msgid "Show form"
+msgstr "نمایش فرم"
+
+#: inc/admin/options.php
+msgid "Show language switcher"
+msgstr "نمایش تغییر زبان"
+
+#: inc/elementor/widgets/contact.php
+msgid "Show map"
+msgstr "نمایش نقشه"
+
+#: inc/admin/options.php
+msgid "Show newsletter form"
+msgstr "نمایش فرم خبرنامه"
+
+#: inc/elementor/widgets/process.php
+msgid "Show numbers instead of icons"
+msgstr ""
+
+#: inc/elementor/widgets/hero.php
+msgid "Show scroll cue"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Show search"
+msgstr "نمایش جستجو"
+
+#: inc/elementor/widgets/hero.php
+msgid "Show stats"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Show top bar"
+msgstr "نمایش نوار بالا"
+
+#: inc/elementor/widgets/services.php
+msgid "Show “learn more” link"
+msgstr ""
+
+#: inc/setup.php
+msgid "Shown next to the blog archive and single posts."
+msgstr ""
+
+#: inc/elementor/widgets/about.php
+msgid "Signature name"
+msgstr ""
+
+#: inc/elementor/widgets/about.php
+msgid "Signature role"
+msgstr ""
+
+#: template-parts/header/default.php
+msgid "Skip to content"
+msgstr "رفتن به محتوا"
+
+#: inc/elementor/widgets/projects.php inc/elementor/widgets/team.php
+msgid "Source"
+msgstr "منبع"
+
+#: inc/elementor/widgets/marquee.php
+msgid "Speed (seconds per loop)"
+msgstr "سرعت (ثانیه در هر دور)"
+
+#: inc/admin/options.php
+msgid "Split (menu – logo – menu)"
+msgstr ""
+
+#: inc/elementor/widgets/team.php
+msgid "Square"
+msgstr ""
+
+#: inc/elementor/widgets/testimonials.php
+msgid "Stars colour"
+msgstr "رنگ ستاره‌ها"
+
+#: inc/elementor/class-abidar-widget-base.php
+#: inc/elementor/widgets/lang-switcher.php inc/elementor/widgets/team.php
+msgid "Start"
+msgstr ""
+
+#: inc/demo-content.php
+msgid "Start with clean data"
+msgstr ""
+
+#: inc/meta-boxes.php
+msgid "Starting price label (optional)"
+msgstr "برچسب قیمت پایه (اختیاری)"
+
+#: inc/elementor/widgets/hero.php
+msgid "Statistics"
+msgstr ""
+
+#: inc/elementor/widgets/hero.php
+msgid "Statistics strip"
+msgstr ""
+
+#: inc/elementor/widgets/hero.php
+msgid "Stats"
+msgstr ""
+
+#: inc/meta-boxes.php
+msgid "Status"
+msgstr "وضعیت"
+
+#: inc/elementor/widgets/process.php
+msgid "Step"
+msgstr "مرحله"
+
+#: inc/elementor/widgets/process.php
+msgid "Steps"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Sticky header"
+msgstr "هدر چسبان"
+
+#: inc/elementor/widgets/lang-switcher.php
+msgid "Style"
+msgstr "سبک"
+
+#: inc/ajax.php
+msgid "Subject"
+msgstr "موضوع"
+
+#: inc/elementor/widgets/page-title.php
+msgid "Subtitle"
+msgstr "زیرعنوان"
+
+#: inc/elementor/widgets/counters.php inc/elementor/widgets/hero.php
+msgid "Successful projects"
+msgstr "پروژه‌های موفق"
+
+#: inc/elementor/widgets/counters.php inc/elementor/widgets/hero.php
+msgid "Suffix"
+msgstr "پسوند"
+
+#: inc/meta-boxes.php
+msgid "Surface / area (e.g. 12,400 m²)"
+msgstr "مساحت (مثلاً ۱۲٬۴۰۰ متر مربع)"
+
+#: inc/admin/options.php
+msgid "Surface / sand"
+msgstr ""
+
+#: inc/elementor/widgets/projects.php
+msgid "Surface background"
+msgstr "پس‌زمینه سطح روشن"
+
+#: inc/elementor/widgets/team.php
+msgid "Tall portrait"
+msgstr ""
+
+#: inc/admin/options.php inc/post-types.php
+msgid "Team"
+msgstr ""
+
+#: inc/admin/options.php inc/elementor/widgets/team.php
+msgid "Team grid"
+msgstr ""
+
+#: inc/elementor/widgets/team.php inc/post-types.php
+msgid "Team member"
+msgstr "عضو تیم"
+
+#: inc/elementor/widgets/team.php
+msgid "Team members"
+msgstr "اعضای تیم"
+
+#: inc/admin/options.php
+msgid ""
+"Team members from the Team post type or manual repeater, with social links "
+"and hover bio."
+msgstr ""
+
+#: inc/elementor/widgets/team.php
+msgid "Team post type"
+msgstr ""
+
+#: inc/post-types.php
+msgid "Testimonial"
+msgstr ""
+
+#: inc/elementor/widgets/testimonials.php inc/post-types.php
+msgid "Testimonials"
+msgstr "نظرات"
+
+#: inc/admin/options.php
+msgid "Testimonials slider"
+msgstr ""
+
+#: inc/elementor/widgets/team.php
+msgid "Text alignment"
+msgstr ""
+
+#: inc/elementor/widgets/lang-switcher.php inc/elementor/widgets/marquee.php
+#: inc/elementor/widgets/process.php
+msgid "Text colour"
+msgstr "رنگ متن"
+
+#: inc/admin/options.php
+msgid ""
+"The palette is injected as CSS variables, so Elementor widgets follow it "
+"automatically."
+msgstr ""
+
+#: inc/elementor/widgets/projects.php
+msgid "Theme demo projects"
+msgstr ""
+
+#: inc/elementor/widgets/team.php
+msgid "Theme demo team"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Theme options"
+msgstr "تنظیمات قالب"
+
+#: inc/admin/demo-import.php
+msgid "Theme palette, contact details and statutory pages"
+msgstr ""
+
+#: inc/elementor/class-abidar-widget-base.php inc/elementor/widgets/cta.php
+#: inc/elementor/widgets/page-title.php inc/elementor/widgets/process.php
+#: inc/elementor/widgets/services.php
+#: inc/widgets/class-abidar-contact-widget.php
+msgid "Title"
+msgstr "عنوان"
+
+#: inc/elementor/class-abidar-widget-base.php inc/elementor/widgets/posts.php
+#: inc/elementor/widgets/process.php inc/elementor/widgets/projects.php
+#: inc/elementor/widgets/services.php
+msgid "Title colour"
+msgstr "رنگ عنوان"
+
+#: inc/elementor/class-abidar-widget-base.php
+msgid "Title typography"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Top bar email"
+msgstr "ایمیل نوار بالا"
+
+#: inc/setup.php
+msgid "Top bar menu"
+msgstr "منوی نوار بالا"
+
+#: inc/admin/options.php
+msgid "Top bar note"
+msgstr "یادداشت نوار بالا"
+
+#: inc/admin/options.php
+msgid "Top bar phone"
+msgstr "تلفن نوار بالا"
+
+#: inc/admin/options.php
+msgid "Transparent header on hero pages"
+msgstr "هدر شفاف در صفحات هیرو"
+
+#: inc/admin/options.php
+msgid "Typography"
+msgstr "تایپوگرافی"
+
+#: inc/admin/demo-import.php
+msgid "Use Templates → Theme Builder for a custom header/footer."
+msgstr ""
+
+#: inc/elementor/widgets/page-title.php
+msgid "Use the current page title"
+msgstr "استفاده از عنوان صفحه فعلی"
+
+#: inc/admin/options.php
+msgid "Version"
+msgstr ""
+
+#: inc/post-types.php
+msgid "View enquiry"
+msgstr ""
+
+#: inc/post-types.php
+msgid "View project"
+msgstr ""
+
+#: inc/demo-content.php
+msgid "Weekly audits with published results"
+msgstr ""
+
+#: inc/post-types.php
+msgid "Welcome to Abidar Group."
+msgstr ""
+
+#: inc/admin/demo-import.php
+msgid "What gets installed"
+msgstr ""
+
+#: inc/setup.php
+msgid "White"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Widget"
+msgstr ""
+
+#: inc/admin/options.php inc/elementor/widgets/contact.php
+msgid "Working hours"
+msgstr "ساعات کاری"
+
+#: inc/meta-boxes.php
+msgid "Year"
+msgstr "سال"
+
+#: inc/admin/demo-import.php
+msgid "You are not allowed to do that."
+msgstr ""
+
+#: inc/comments.php
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/ajax.php
+msgid "[%2$s] New enquiry from %1$s"
+msgstr ""
+
+#: inc/elementor/init.php
+msgid ""
+"install Elementor to unlock the 15 dedicated widgets and the header/footer "
+"builder."
+msgstr ""

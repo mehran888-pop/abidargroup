@@ -1,0 +1,74 @@
+/**
+ * Abidar — widget-level refinements.
+ *
+ * main.css already styles every section the widgets render. This file only
+ * adds the polish that belongs to the Elementor widgets (hover reveals,
+ * grid spans, RTL nudges) plus a few defensive rules so widgets look right
+ * when dropped inside arbitrary Elementor containers.
+ */
+
+/* Widgets should never inherit Elementor's default container padding. */
+.elementor-widget-ab-hero,
+.elementor-widget-ab-services,
+.elementor-widget-ab-about,
+.elementor-widget-ab-counters,
+.elementor-widget-ab-projects,
+.elementor-widget-ab-process,
+.elementor-widget-ab-team,
+.elementor-widget-ab-testimonials,
+.elementor-widget-ab-cta,
+.elementor-widget-ab-contact,
+.elementor-widget-ab-marquee,
+.elementor-widget-ab-posts,
+.elementor-widget-ab-accordion,
+.elementor-widget-ab-page-title {
+  --ab-container: 1280px;
+}
+
+.elementor-widget-ab-hero .ab-hero { margin: 0; }
+
+/* Reveal-on-hover polish for the projects widget. */
+.ab-project--feature .ab-project__title { font-size: clamp(1.35rem, 2.4vw, 1.85rem); }
+.ab-project--feature .ab-project__excerpt { max-height: none; opacity: 1; margin-top: .4rem; }
+
+/* Grid: honour the columns custom property when set by a control. */
+.ab-projects-grid { grid-template-columns: repeat(var(--ab-cols, 3), minmax(0, 1fr)); }
+
+@media (max-width: 860px) {
+  .ab-projects-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ab-project--feature { grid-column: span 2; }
+}
+
+@media (max-width: 620px) {
+  .ab-projects-grid { grid-template-columns: 1fr; }
+  .ab-project--feature { grid-column: span 1; }
+}
+
+/* Counters inside a light container shouldn't fight the theme's dark band. */
+.ab-counters--light .ab-counter { border-color: rgba(16, 27, 28, 0.1); }
+
+/* Language switcher centring helper used by the widget. */
+.ab-lang--center { justify-content: center; }
+
+/* Marquee needs a mask that works on both light and dark backgrounds. */
+.ab-section--dark .ab-marquee {
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+}
+
+/* Elementor container full-width fixes for our hero. */
+.elementor-widget-ab-hero .elementor-widget-container { overflow: hidden; }
+
+/* Smaller rhythm inside Elementor columns. */
+.elementor-widget-ab-contact .ab-contact { gap: clamp(1.5rem, 4vw, 3rem); }
+
+/* Accordion button reset inside Elementor (it strips some defaults). */
+.elementor-widget-ab-accordion .ab-accordion__btn { text-align: start; font-family: var(--ab-font-head); }
+
+/* The theme's own reveal animation should still work inside the editor preview. */
+.elementor-editor-active .ab-reveal { opacity: 1 !important; transform: none !important; }
+
+/* Ensure SVG icons inherit colour from Elementor controls. */
+.elementor-widget-ab-services .ab-icon,
+.elementor-widget-ab-process .ab-icon,
+.elementor-widget-ab-counters .ab-icon { transition: stroke .25s var(--ab-ease); }
