@@ -1,6 +1,24 @@
 /**
  * Abidar — theme options panel styling.
+ *
+ * Palette comes from inc/admin/options.php as inline CSS variables, with
+ * fallbacks so the file also works standalone. Fully logical-direction aware
+ * (RTL-safe) and uses a Persian-capable font stack.
  */
+
+:root {
+  --ab-primary: #0c6a5a;
+  --ab-primary-dark: #084a40;
+  --ab-accent: #c8912f;
+  --ab-ink: #101b1c;
+  --ab-body: #4a5758;
+  --ab-surface: #f5f4f0;
+  --ab-dark: #0b1516;
+  --ab-line: #dcdcde;
+  --ab-radius: 10px;
+  --ab-admin-font: "Vazirmatn", -apple-system, BlinkMacSystemFont, "Segoe UI", Tahoma, "Noto Sans Arabic", sans-serif;
+}
+
 
 .ab-admin {
   max-width: 1180px;
@@ -184,6 +202,32 @@
   overflow: hidden;
 }
 
+/* Hidden carrier for the attachment id; the preview is the visible surface. */
+.ab-image-field__input { display: none; }
+
+.ab-image-field__select {
+  border-radius: 7px;
+  min-height: 32px;
+}
+
+.ab-image-field__remove {
+  border-radius: 7px;
+  color: #b32d2e;
+  min-height: 32px;
+}
+
+.ab-image-field__remove:hover { color: #8a2424; }
+
+/* Nothing to remove until an image is picked. */
+.ab-image-field[data-empty] .ab-image-field__remove { display: none; }
+
+/* Colour picker trigger: monospaced hex, compact width. */
+.ab-color-field {
+  max-width: 130px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  letter-spacing: 0.02em;
+}
+
 .ab-image-field__preview img { width: 100%; height: 100%; object-fit: contain; }
 .ab-image-field__preview:not(:empty) { border-style: solid; background: #fff; }
 .ab-image-field__preview:not(:empty)::after { content: none; }
@@ -287,3 +331,89 @@
   .ab-admin__form { padding: 1.25rem; }
   .ab-admin__table th { width: auto; }
 }
+
+
+/* ————————————————————————————————————————————————
+   Palette-aware controls, RTL and typography
+   ———————————————————————————————————————————————— */
+.ab-admin,
+.ab-admin * { font-family: var(--ab-admin-font); }
+
+.ab-admin code,
+.ab-admin pre,
+.ab-admin .ab-mono,
+.ab-admin textarea.ab-code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+
+.ab-admin .button-primary {
+  background: var(--ab-primary) !important;
+  border-color: var(--ab-primary-dark) !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+.ab-admin .button-primary:hover,
+.ab-admin .button-primary:focus {
+  background: var(--ab-primary-dark) !important;
+  border-color: var(--ab-primary-dark) !important;
+}
+
+.ab-admin input[type='text']:focus,
+.ab-admin input[type='url']:focus,
+.ab-admin input[type='email']:focus,
+.ab-admin input[type='number']:focus,
+.ab-admin textarea:focus,
+.ab-admin select:focus {
+  border-color: var(--ab-primary);
+  box-shadow: 0 0 0 1px var(--ab-primary);
+}
+
+/* Tabs scroll horizontally on narrow screens instead of wrapping into a mess. */
+@media (max-width: 900px) {
+  .ab-admin__body { grid-template-columns: 1fr; }
+  .ab-admin__tabs {
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 0.25rem;
+    padding-bottom: 0.5rem;
+    scrollbar-width: thin;
+  }
+  .ab-admin__tab { white-space: nowrap; }
+  .ab-admin__header { border-radius: 14px; }
+  .ab-admin__form { border-radius: 14px; margin-top: 1rem; }
+}
+
+/* Keep the language editor usable inside the form table. */
+.ab-admin .ab-lang-editor__table { width: 100%; border-collapse: collapse; }
+
+.ab-admin .ab-lang-editor__table th,
+.ab-admin .ab-lang-editor__table td {
+  padding: 0.4rem 0.5rem;
+  text-align: start;
+  vertical-align: top;
+  border-bottom: 1px solid var(--ab-line);
+}
+
+/* Action row under the form: primary save + quick links. */
+.ab-admin__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+  padding-top: 1.25rem;
+  margin-top: 0.5rem;
+  border-top: 1px solid var(--ab-line);
+}
+
+.ab-admin__actions .button { margin: 0; border-radius: 7px; min-height: 36px; }
+
+.ab-admin__actions .button.ab-admin__secondary { color: var(--ab-primary); border-color: var(--ab-primary); }
+
+.ab-admin__link {
+  font-size: 0.82rem;
+  color: var(--ab-body);
+  text-decoration: none;
+  border-bottom: 1px dashed currentColor;
+  padding-bottom: 1px;
+}
+
+.ab-admin__link:hover { color: var(--ab-primary); }

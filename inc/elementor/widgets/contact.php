@@ -8,6 +8,7 @@
 defined( 'ABSPATH' ) || exit;
 
 use Elementor\Controls_Manager;
+use Elementor\Group_Control_Typography;
 
 /**
  * Class Abidar_Widget_Contact
@@ -118,6 +119,33 @@ class Abidar_Widget_Contact extends Abidar_Widget_Base {
 			array(
 				'label' => esc_html__( 'Form', 'abidar' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
+			)
+		);
+
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			array(
+				'name'     => 'label_typography',
+				'label'    => esc_html__( 'Label typography', 'abidar' ),
+				'selector' => '{{WRAPPER}} .ab-contact-row__label',
+			)
+		);
+
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			array(
+				'name'     => 'value_typography',
+				'label'    => esc_html__( 'Value typography', 'abidar' ),
+				'selector' => '{{WRAPPER}} .ab-contact-row__value',
+			)
+		);
+
+		$this->add_control(
+			'icon_color',
+			array(
+				'label'     => esc_html__( 'Icon colour', 'abidar' ),
+				'type'      => Controls_Manager::COLOR,
+				'selectors' => array( '{{WRAPPER}} .ab-contact-row__icon' => 'color: {{VALUE}};' ),
 			)
 		);
 

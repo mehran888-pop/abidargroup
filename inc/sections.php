@@ -416,7 +416,7 @@ function ab_render_counters( $args = array() ) {
 					<div class="ab-counter ab-reveal" style="--ab-i:<?php echo (int) $i; ?>">
 						<span class="ab-counter__icon"><?php abidar_icon( $item['icon'] ?? 'award', true, array( 'width' => 26, 'height' => 26 ) ); ?></span>
 						<span class="ab-counter__num">
-							<span data-counter="<?php echo esc_attr( $item['number'] ); ?>">0</span>
+							<span data-counter="<?php echo esc_attr( $item['number'] ); ?>"><?php echo esc_html( $item['number'] ); ?></span>
 							<span><?php echo esc_html( $item['suffix'] ?? '' ); ?></span>
 						</span>
 						<span class="ab-counter__label"><?php echo esc_html( abidar_localized( $item, 'label' ) ); ?></span>
@@ -1123,4 +1123,208 @@ function ab_render_page_title( $args = array() ) {
 	);
 
 	abidar_page_hero( $args );
+}
+
+/* ═══════════════════════════════════════════════════
+   SECTOR SPLIT (award-style interactive list)
+   ═══════════════════════════════════════════════════ */
+/**
+ * Render the four sectors as an expanding image list.
+ *
+ * Each row grows on hover and reveals its photograph — the "editorial list"
+ * pattern used by studios and engineering firms, built with no JS.
+ *
+ * @param array $args Args.
+ */
+function ab_render_sectors( $args = array() ) {
+	$defaults = array(
+		'eyebrow' => abidar_copy( 'sectors_eyebrow' ),
+		'title'   => abidar_copy( 'sectors_title' ),
+		'text'    => abidar_copy( 'sectors_text' ),
+		'items'   => array(
+			array(
+				'num'   => '01',
+				'title' => abidar_copy( 'service_mining' ),
+				'text'  => abidar_copy( 'service_mining_text' ),
+				'image' => ABIDAR_URI . '/assets/img/project1.jpg',
+				'tag'   => abidar_copy( 'sector_tag_mining' ),
+			),
+			array(
+				'num'   => '02',
+				'title' => abidar_copy( 'service_oil' ),
+				'text'  => abidar_copy( 'service_oil_text' ),
+				'image' => ABIDAR_URI . '/assets/img/project2.jpg',
+				'tag'   => abidar_copy( 'sector_tag_oil' ),
+			),
+			array(
+				'num'   => '03',
+				'title' => abidar_copy( 'service_stone' ),
+				'text'  => abidar_copy( 'service_stone_text' ),
+				'image' => ABIDAR_URI . '/assets/img/stone.jpg',
+				'tag'   => abidar_copy( 'sector_tag_stone' ),
+			),
+			array(
+				'num'   => '04',
+				'title' => abidar_copy( 'service_engineering' ),
+				'text'  => abidar_copy( 'service_engineering_text' ),
+				'image' => ABIDAR_URI . '/assets/img/about.jpg',
+				'tag'   => abidar_copy( 'sector_tag_engineering' ),
+			),
+		),
+		'surface' => false,
+		'class'   => '',
+	);
+
+	$args = ab_section_args( $args, $defaults );
+	?>
+	<section class="ab-section ab-sectors<?php echo $args['surface'] ? ' ab-section--surface' : ''; ?> <?php echo esc_attr( $args['class'] ); ?>">
+		<div class="ab-container">
+			<div class="ab-section-head ab-section-head--split ab-reveal">
+				<div>
+					<?php if ( $args['eyebrow'] ) : ?>
+						<span class="ab-eyebrow"><?php echo esc_html( $args['eyebrow'] ); ?></span>
+					<?php endif; ?>
+					<h2><?php echo esc_html( $args['title'] ); ?></h2>
+				</div>
+				<?php if ( $args['text'] ) : ?>
+					<p><?php echo esc_html( $args['text'] ); ?></p>
+				<?php endif; ?>
+			</div>
+
+			<div class="ab-sectors__list ab-stagger">
+				<?php foreach ( $args['items'] as $item ) : ?>
+					<a class="ab-sector" href="<?php echo esc_url( abidar_page_url( 'services' ) ); ?>">
+						<span class="ab-sector__media">
+							<img src="<?php echo esc_url( $item['image'] ); ?>" alt="" loading="lazy" decoding="async">
+						</span>
+						<span class="ab-sector__body">
+							<span class="ab-sector__num"><?php echo esc_html( $item['num'] ); ?></span>
+							<span class="ab-sector__text">
+								<span class="ab-sector__title"><?php echo esc_html( $item['title'] ); ?></span>
+								<span class="ab-sector__desc"><?php echo esc_html( $item['text'] ); ?></span>
+							</span>
+							<span class="ab-sector__tag"><?php echo esc_html( $item['tag'] ); ?></span>
+							<span class="ab-sector__arrow"><?php abidar_icon( 'arrow-up-right', true, array( 'width' => 18, 'height' => 18 ) ); ?></span>
+						</span>
+					</a>
+				<?php endforeach; ?>
+			</div>
+		</div>
+	</section>
+	<?php
+}
+
+/* ═══════════════════════════════════════════════════
+   CAPABILITY / PROCESS HORIZONTAL SCROLL
+   ═══════════════════════════════════════════════════ */
+/**
+ * Render a sticky-stacked capability showcase.
+ *
+ * @param array $args Args.
+ */
+function ab_render_capabilities( $args = array() ) {
+	$defaults = array(
+		'eyebrow' => abidar_copy( 'cap_eyebrow' ),
+		'title'   => abidar_copy( 'cap_title' ),
+		'items'   => array(
+			array( 'value' => '12', 'unit' => '', 'title' => abidar_copy( 'cap_1' ), 'text' => abidar_copy( 'cap_1_text' ), 'icon' => 'excavator' ),
+			array( 'value' => '1.8', 'unit' => 'M', 'title' => abidar_copy( 'cap_2' ), 'text' => abidar_copy( 'cap_2_text' ), 'icon' => 'package' ),
+			array( 'value' => '0.5', 'unit' => '', 'title' => abidar_copy( 'cap_3' ), 'text' => abidar_copy( 'cap_3_text' ), 'icon' => 'shield' ),
+			array( 'value' => '24', 'unit' => '/7', 'title' => abidar_copy( 'cap_4' ), 'text' => abidar_copy( 'cap_4_text' ), 'icon' => 'clock' ),
+		),
+		'image'   => ABIDAR_URI . '/assets/img/hero-mine.jpg',
+		'class'   => '',
+	);
+	$args = ab_section_args( $args, $defaults );
+	?>
+	<section class="ab-section ab-section--dark ab-caps <?php echo esc_attr( $args['class'] ); ?>">
+		<div class="ab-caps__bg" aria-hidden="true">
+			<img src="<?php echo esc_url( $args['image'] ); ?>" alt="" loading="lazy" decoding="async">
+		</div>
+		<div class="ab-container">
+			<div class="ab-caps__head ab-reveal">
+				<?php if ( $args['eyebrow'] ) : ?>
+					<span class="ab-eyebrow ab-eyebrow--light"><?php echo esc_html( $args['eyebrow'] ); ?></span>
+				<?php endif; ?>
+				<h2><?php echo esc_html( $args['title'] ); ?></h2>
+			</div>
+
+			<div class="ab-caps__grid ab-stagger">
+				<?php foreach ( $args['items'] as $item ) : ?>
+					<div class="ab-cap">
+						<span class="ab-cap__icon"><?php abidar_icon( $item['icon'], true, array( 'width' => 24, 'height' => 24 ) ); ?></span>
+						<span class="ab-cap__value">
+							<?php echo esc_html( $item['value'] ); ?><span class="ab-cap__unit"><?php echo esc_html( $item['unit'] ); ?></span>
+						</span>
+						<span class="ab-cap__title"><?php echo esc_html( $item['title'] ); ?></span>
+						<span class="ab-cap__text"><?php echo esc_html( $item['text'] ); ?></span>
+					</div>
+				<?php endforeach; ?>
+			</div>
+		</div>
+	</section>
+	<?php
+}
+
+/* ═══════════════════════════════════════════════════
+   FEATURED PROJECT (editorial full-bleed)
+   ═══════════════════════════════════════════════════ */
+/**
+ * Render one project as a full-bleed editorial block with sticky facts.
+ *
+ * @param array $args Args.
+ */
+function ab_render_featured( $args = array() ) {
+	$defaults = array(
+		'eyebrow' => abidar_copy( 'featured_eyebrow' ),
+		'title'   => abidar_copy( 'featured_title' ),
+		'text'    => abidar_copy( 'featured_text' ),
+		'image'   => ABIDAR_URI . '/assets/img/project1.jpg',
+		'facts'   => array(
+			array( 'label' => abidar_copy( 'client' ), 'value' => abidar_copy( 'featured_client' ) ),
+			array( 'label' => abidar_copy( 'location' ), 'value' => abidar_copy( 'featured_location' ) ),
+			array( 'label' => abidar_copy( 'duration' ), 'value' => abidar_copy( 'featured_duration' ) ),
+			array( 'label' => abidar_copy( 'sector' ), 'value' => abidar_copy( 'service_mining' ) ),
+		),
+		'url'     => '',
+		'class'   => '',
+	);
+	$args = ab_section_args( $args, $defaults );
+	$url  = $args['url'] ? $args['url'] : abidar_page_url( 'projects' );
+	?>
+	<section class="ab-section ab-featured <?php echo esc_attr( $args['class'] ); ?>">
+		<div class="ab-container">
+			<div class="ab-featured__grid">
+				<div class="ab-featured__media ab-reveal">
+					<img src="<?php echo esc_url( $args['image'] ); ?>" alt="" loading="lazy" decoding="async">
+					<a class="ab-featured__play" href="<?php echo esc_url( $url ); ?>" aria-label="<?php echo esc_attr( abidar_copy( 'view_project' ) ); ?>">
+						<?php abidar_icon( 'arrow-up-right', true, array( 'width' => 22, 'height' => 22 ) ); ?>
+					</a>
+				</div>
+
+				<div class="ab-featured__body">
+					<?php if ( $args['eyebrow'] ) : ?>
+						<span class="ab-eyebrow"><?php echo esc_html( $args['eyebrow'] ); ?></span>
+					<?php endif; ?>
+					<h2 class="ab-featured__title"><?php echo esc_html( $args['title'] ); ?></h2>
+					<p class="ab-lead"><?php echo esc_html( $args['text'] ); ?></p>
+
+					<dl class="ab-featured__facts">
+						<?php foreach ( $args['facts'] as $fact ) : ?>
+							<div class="ab-fact">
+								<dt><?php echo esc_html( $fact['label'] ); ?></dt>
+								<dd><?php echo esc_html( $fact['value'] ); ?></dd>
+							</div>
+						<?php endforeach; ?>
+					</dl>
+
+					<a class="ab-btn ab-btn--primary" href="<?php echo esc_url( $url ); ?>">
+						<span><?php echo esc_html( abidar_copy( 'view_project' ) ); ?></span>
+						<?php abidar_icon( 'arrow-right', true, array( 'width' => 16, 'height' => 16 ) ); ?>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<?php
 }

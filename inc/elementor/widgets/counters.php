@@ -139,6 +139,7 @@ class Abidar_Widget_Counters extends Abidar_Widget_Base {
 			Group_Control_Typography::get_type(),
 			array(
 				'name'     => 'number_typography',
+				'label'     => esc_html__( 'Number typography', 'abidar' ),
 				'selector' => '{{WRAPPER}} .ab-counter__num',
 			)
 		);
@@ -272,7 +273,7 @@ class Abidar_Widget_Counters extends Abidar_Widget_Base {
 						<div class="ab-counter ab-reveal" style="--ab-i:<?php echo (int) $i; ?>">
 							<span class="ab-counter__icon"><?php abidar_icon( $item['icon'], true, array( 'width' => 26, 'height' => 26 ) ); ?></span>
 							<span class="ab-counter__num">
-								<span data-counter="<?php echo esc_attr( $item['number'] ); ?>">0</span>
+								<span data-counter="<?php echo esc_attr( $item['number'] ); ?>"><?php echo esc_html( $item['number'] ); ?></span>
 								<span><?php echo esc_html( $item['suffix'] ); ?></span>
 							</span>
 							<span class="ab-counter__label"><?php echo esc_html( $item['label'] ); ?></span>

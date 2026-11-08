@@ -123,7 +123,83 @@ class Abidar_Widget_Page_Title extends Abidar_Widget_Base {
 			Group_Control_Typography::get_type(),
 			array(
 				'name'     => 'title_typography',
+				'label'    => esc_html__( 'Title typography', 'abidar' ),
 				'selector' => '{{WRAPPER}} .ab-page-hero__title',
+			)
+		);
+
+		$this->add_control(
+			'sub_color',
+			array(
+				'label'     => esc_html__( 'Description colour', 'abidar' ),
+				'type'      => Controls_Manager::COLOR,
+				'separator' => 'before',
+				'selectors' => array( '{{WRAPPER}} .ab-page-hero__sub' => 'color: {{VALUE}};' ),
+			)
+		);
+
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			array(
+				'name'     => 'sub_typography',
+				'label'    => esc_html__( 'Description typography', 'abidar' ),
+				'selector' => '{{WRAPPER}} .ab-page-hero__sub',
+			)
+		);
+
+		$this->add_control(
+			'eyebrow_color',
+			array(
+				'label'     => esc_html__( 'Eyebrow colour', 'abidar' ),
+				'type'      => Controls_Manager::COLOR,
+				'separator' => 'before',
+				'selectors' => array( '{{WRAPPER}} .ab-eyebrow' => 'color: {{VALUE}};' ),
+			)
+		);
+
+		$this->add_control(
+			'breadcrumb_color',
+			array(
+				'label'     => esc_html__( 'Breadcrumb colour', 'abidar' ),
+				'type'      => Controls_Manager::COLOR,
+				'selectors' => array(
+					'{{WRAPPER}} .ab-breadcrumb li, {{WRAPPER}} .ab-breadcrumb a' => 'color: {{VALUE}};',
+				),
+			)
+		);
+
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			array(
+				'name'     => 'breadcrumb_typography',
+				'label'    => esc_html__( 'Breadcrumb typography', 'abidar' ),
+				'selector' => '{{WRAPPER}} .ab-breadcrumb ol',
+			)
+		);
+
+		$this->add_control(
+			'overlay_color',
+			array(
+				'label'     => esc_html__( 'Overlay colour (start)', 'abidar' ),
+				'type'      => Controls_Manager::COLOR,
+				'separator' => 'before',
+				'selectors' => array(
+					'{{WRAPPER}} .ab-page-hero' => 'background-image: linear-gradient(105deg, {{VALUE}} 18%, rgba(8,22,21,0.74) 60%, rgba(8,22,21,0.5)), var(--ab-hero-bg, none);',
+				),
+			)
+		);
+
+		$this->add_control(
+			'overlay_strength',
+			array(
+				'label'      => esc_html__( 'Overlay strength', 'abidar' ),
+				'type'       => Controls_Manager::SLIDER,
+				'size_units' => array( '%' ),
+				'range'      => array( '%' => array( 'min' => 0, 'max' => 100 ) ),
+				'default'    => array( 'size' => 40, 'unit' => '%' ),
+				'selectors'  => array(
+					'{{WRAPPER}} .ab-page-hero::after' => 'opacity: {{SIZE}}{{UNIT}};',
+				),
 			)
 		);
 

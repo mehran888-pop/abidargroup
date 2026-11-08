@@ -1,6 +1,6 @@
 <?php
 /**
- * Comments.
+ * Comments template.
  *
  * @package Abidar
  */
@@ -11,9 +11,9 @@ if ( post_password_required() ) {
 	return;
 }
 ?>
-<section id="comments" class="ab-comments" style="margin-top:3rem">
+<section id="comments" class="ab-comments">
 	<?php if ( have_comments() ) : ?>
-		<h2 class="ab-comments__title" style="font-size:1.35rem">
+		<h2 class="ab-comments__title">
 			<?php
 			printf(
 				/* translators: %s: comment count */
@@ -23,7 +23,7 @@ if ( post_password_required() ) {
 			?>
 		</h2>
 
-		<ol class="ab-comments__list" style="list-style:none;padding:0;margin:1.5rem 0;display:flex;flex-direction:column;gap:1.25rem">
+		<ol class="ab-comments__list">
 			<?php
 			wp_list_comments(
 				array(
@@ -53,18 +53,18 @@ if ( post_password_required() ) {
 	<?php
 	comment_form(
 		array(
-			'title_reply'         => abidar_copy( 'comment_form_title' ),
-			'title_reply_before'  => '<h3 class="ab-comments__form-title" style="font-size:1.2rem;margin-top:2rem">',
-			'title_reply_after'   => '</h3>',
-			'class_form'          => 'ab-form',
-			'comment_notes_before'=> '',
-			'label_submit'        => abidar_copy( 'send' ),
-			'class_submit'        => 'ab-btn ab-btn--primary',
-			'comment_field'       => '<p class="ab-field"><label for="comment">' . abidar_copy( 'form_message' ) . '</label><textarea id="comment" name="comment" required></textarea></p>',
-			'fields'              => array(
-				'author' => '<p class="ab-field"><label for="author">' . abidar_copy( 'form_name' ) . '</label><input id="author" name="author" type="text" required></p>',
-				'email'  => '<p class="ab-field"><label for="email">' . abidar_copy( 'form_email' ) . '</label><input id="email" name="email" type="email" required></p>',
-				'url'    => '<p class="ab-field"><label for="url">Website</label><input id="url" name="url" type="url"></p>',
+			'title_reply'          => abidar_copy( 'comment_form_title' ),
+			'title_reply_before'   => '<h3 class="ab-comments__form-title">',
+			'title_reply_after'    => '</h3>',
+			'class_form'           => 'ab-form',
+			'comment_notes_before' => '',
+			'label_submit'         => abidar_copy( 'send' ),
+			'class_submit'         => 'ab-btn ab-btn--primary',
+			'comment_field'        => '<p class="ab-field"><label for="comment">' . esc_html( abidar_copy( 'form_message' ) ) . '</label><textarea id="comment" name="comment" required></textarea></p>',
+			'fields'               => array(
+				'author' => '<p class="ab-field"><label for="author">' . esc_html( abidar_copy( 'form_name' ) ) . '</label><input id="author" name="author" type="text" required></p>',
+				'email'  => '<p class="ab-field"><label for="email">' . esc_html( abidar_copy( 'form_email' ) ) . '</label><input id="email" name="email" type="email" required></p>',
+				'url'    => '<p class="ab-field"><label for="url">' . esc_html__( 'Website', 'abidar' ) . '</label><input id="url" name="url" type="url"></p>',
 			),
 		)
 	);

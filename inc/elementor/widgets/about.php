@@ -130,6 +130,33 @@ class Abidar_Widget_About extends Abidar_Widget_Base {
 			)
 		);
 
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			array(
+				'name'     => 'lead_typography',
+				'label'    => esc_html__( 'Body typography', 'abidar' ),
+				'selector' => '{{WRAPPER}} .ab-lead, {{WRAPPER}} .ab-checklist__text',
+			)
+		);
+
+		$this->add_control(
+			'sig_color',
+			array(
+				'label'     => esc_html__( 'Signature colour', 'abidar' ),
+				'type'      => Controls_Manager::COLOR,
+				'selectors' => array( '{{WRAPPER}} .ab-signature__name' => 'color: {{VALUE}};' ),
+			)
+		);
+
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			array(
+				'name'     => 'sig_typography',
+				'label'    => esc_html__( 'Signature typography', 'abidar' ),
+				'selector' => '{{WRAPPER}} .ab-signature__name',
+			)
+		);
+
 		$this->add_control(
 			'image_radius',
 			array(

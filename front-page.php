@@ -50,11 +50,14 @@ if ( $use_page && abidar_is_elementor_built() ) {
 	// Composed theme homepage: works the moment the theme is activated.
 	ab_render_hero();
 	ab_render_marquee();
+	ab_render_sectors();
 	ab_render_services();
-	ab_render_about();
+	ab_render_capabilities();
 	ab_render_counters();
+	ab_render_featured();
 	ab_render_projects();
 	ab_render_process( array( 'surface' => true ) );
+	ab_render_about();
 	ab_render_team();
 	ab_render_testimonials();
 	ab_render_posts();

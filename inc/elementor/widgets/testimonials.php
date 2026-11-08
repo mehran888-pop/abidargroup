@@ -124,6 +124,42 @@ class Abidar_Widget_Testimonials extends Abidar_Widget_Base {
 			)
 		);
 
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			array(
+				'name'     => 'quote_typography',
+				'label'    => esc_html__( 'Quote typography', 'abidar' ),
+				'selector' => '{{WRAPPER}} .ab-quote__text',
+			)
+		);
+
+		$this->add_control(
+			'name_color',
+			array(
+				'label'     => esc_html__( 'Name colour', 'abidar' ),
+				'type'      => Controls_Manager::COLOR,
+				'selectors' => array( '{{WRAPPER}} .ab-quote__name' => 'color: {{VALUE}};' ),
+			)
+		);
+
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			array(
+				'name'     => 'name_typography',
+				'label'    => esc_html__( 'Name typography', 'abidar' ),
+				'selector' => '{{WRAPPER}} .ab-quote__name',
+			)
+		);
+
+		$this->add_control(
+			'role_color',
+			array(
+				'label'     => esc_html__( 'Role colour', 'abidar' ),
+				'type'      => Controls_Manager::COLOR,
+				'selectors' => array( '{{WRAPPER}} .ab-quote__role' => 'color: {{VALUE}};' ),
+			)
+		);
+
 		$this->add_control(
 			'card_bg',
 			array(
@@ -145,7 +181,8 @@ class Abidar_Widget_Testimonials extends Abidar_Widget_Base {
 		$this->add_group_control(
 			Group_Control_Typography::get_type(),
 			array(
-				'name'     => 'quote_typography',
+				'name'     => 'card_quote_typography',
+				'label'     => esc_html__( 'Card quote typography', 'abidar' ),
 				'selector' => '{{WRAPPER}} .ab-quote__text',
 			)
 		);

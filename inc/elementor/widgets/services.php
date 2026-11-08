@@ -194,6 +194,7 @@ class Abidar_Widget_Services extends Abidar_Widget_Base {
 			Group_Control_Box_Shadow::get_type(),
 			array(
 				'name'     => 'card_shadow',
+				'label'     => esc_html__( 'Card box shadow', 'abidar' ),
 				'selector' => '{{WRAPPER}} .ab-service',
 			)
 		);
@@ -234,6 +235,7 @@ class Abidar_Widget_Services extends Abidar_Widget_Base {
 			Group_Control_Typography::get_type(),
 			array(
 				'name'     => 'title_typography',
+				'label'     => esc_html__( 'Title typography', 'abidar' ),
 				'selector' => '{{WRAPPER}} .ab-service__title',
 			)
 		);

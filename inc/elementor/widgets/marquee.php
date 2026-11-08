@@ -111,6 +111,15 @@ class Abidar_Widget_Marquee extends Abidar_Widget_Base {
 			)
 		);
 
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			array(
+				'name'     => 'item_typography',
+				'label'    => esc_html__( 'Item typography', 'abidar' ),
+				'selector' => '{{WRAPPER}} .ab-marquee__item',
+			)
+		);
+
 		$this->add_control(
 			'item_color',
 			array(
@@ -145,7 +154,8 @@ class Abidar_Widget_Marquee extends Abidar_Widget_Base {
 		$this->add_group_control(
 			Group_Control_Typography::get_type(),
 			array(
-				'name'     => 'item_typography',
+				'name'     => 'logo_typography',
+				'label'     => esc_html__( 'Logo typography', 'abidar' ),
 				'selector' => '{{WRAPPER}} .ab-marquee__item',
 			)
 		);

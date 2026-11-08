@@ -19,6 +19,8 @@ abidar_page_hero(
 	)
 );
 
+abidar_page_content();
+
 ab_render_services(
 	array(
 		'style'    => 'image',

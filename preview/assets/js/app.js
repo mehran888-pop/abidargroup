@@ -16,7 +16,7 @@
   };
 
   var D = window.ABIDAR_DATA || {};
-  var IMG = '../assets/img/';
+  var IMG = "../assets/img/";
 
   /* ————————————————————————————————————————————————
      State
@@ -742,10 +742,115 @@
      ———————————————————————————————————————————————— */
   function homeSections() {
     return [
-      secHero(), secMarquee(), secServices(), secAbout(), secCounters(),
-      secProjects(), secProcess(), secTeam(), secTestimonials(), secPosts(),
-      secAccordion(), secLangStrip(), secCta(), secContact()
+      secHero(), secMarquee(), secSectors(), secServices(), secCapabilities(),
+      secCounters(), secFeatured(), secProjects(), secProcess(), secAbout(),
+      secTeam(), secTestimonials(), secPosts(), secAccordion(), secCta()
     ].join('');
+  }
+
+
+  /* ——— Sector list (new) ——————————————————————————— */
+  function secSectors() {
+    var rows = [
+      { num: '01', title: t('service_mining'), text: t('service_mining_text'), tag: t('sector_tag_mining'), img: 'project1.jpg' },
+      { num: '02', title: t('service_oil'), text: t('service_oil_text'), tag: t('sector_tag_oil'), img: 'oil-gas.jpg' },
+      { num: '03', title: t('service_stone'), text: t('service_stone_text'), tag: t('sector_tag_stone'), img: 'stone.jpg' },
+      { num: '04', title: t('service_engineering'), text: t('service_engineering_text'), tag: t('sector_tag_engineering'), img: 'about.jpg' }
+    ];
+
+    return ''
+      + '<section class="ab-section ab-sectors">'
+      + '  <div class="ab-container">'
+      + '    <div class="ab-section-head ab-section-head--split ab-reveal">'
+      + '      <div><span class="ab-eyebrow">' + esc(t('sectors_eyebrow')) + '</span>'
+      + '        <h2>' + esc(t('sectors_title')) + '</h2></div>'
+      + '      <p>' + esc(t('sectors_text')) + '</p>'
+      + '    </div>'
+      + '    <div class="ab-sectors__list ab-stagger">'
+      + rows.map(function (r) {
+        return ''
+          + '<a class="ab-sector" href="#" data-page="services">'
+          + '  <span class="ab-sector__media"><img src="' + IMG + r.img + '" alt="" loading="lazy"></span>'
+          + '  <span class="ab-sector__body">'
+          + '    <span class="ab-sector__num">' + r.num + '</span>'
+          + '    <span class="ab-sector__text">'
+          + '      <span class="ab-sector__title">' + esc(r.title) + '</span>'
+          + '      <span class="ab-sector__desc">' + esc(r.text) + '</span>'
+          + '    </span>'
+          + '    <span class="ab-sector__tag">' + esc(r.tag) + '</span>'
+          + '    <span class="ab-sector__arrow">' + icon('arrow-up-right') + '</span>'
+          + '  </span>'
+          + '</a>';
+      }).join('')
+      + '    </div>'
+      + '  </div>'
+      + '</section>';
+  }
+
+  /* ——— Capability band (new) ——————————————————————— */
+  function secCapabilities() {
+    var items = [
+      { icon: 'excavator', value: '12', unit: '', title: t('cap_1'), text: t('cap_1_text') },
+      { icon: 'package', value: '1.8', unit: 'M', title: t('cap_2'), text: t('cap_2_text') },
+      { icon: 'shield', value: '0.5', unit: '', title: t('cap_3'), text: t('cap_3_text') },
+      { icon: 'clock', value: '24', unit: '/7', title: t('cap_4'), text: t('cap_4_text') }
+    ];
+
+    return ''
+      + '<section class="ab-section ab-section--dark ab-caps">'
+      + '  <div class="ab-caps__bg" aria-hidden="true"><img src="' + IMG + 'hero-mine.jpg" alt="" loading="lazy"></div>'
+      + '  <div class="ab-container">'
+      + '    <div class="ab-caps__head ab-reveal">'
+      + '      <span class="ab-eyebrow ab-eyebrow--light">' + esc(t('cap_eyebrow')) + '</span>'
+      + '      <h2>' + esc(t('cap_title')) + '</h2>'
+      + '    </div>'
+      + '    <div class="ab-caps__grid ab-stagger">'
+      + items.map(function (it) {
+        return ''
+          + '<div class="ab-cap">'
+          + '  <span class="ab-cap__icon">' + icon(it.icon) + '</span>'
+          + '  <span class="ab-cap__value">' + esc(it.value) + '<span class="ab-cap__unit">' + esc(it.unit) + '</span></span>'
+          + '  <span class="ab-cap__title">' + esc(it.title) + '</span>'
+          + '  <span class="ab-cap__text">' + esc(it.text) + '</span>'
+          + '</div>';
+      }).join('')
+      + '    </div>'
+      + '  </div>'
+      + '</section>';
+  }
+
+  /* ——— Featured project (new) ————————————————————— */
+  function secFeatured() {
+    var facts = [
+      { label: t('client'), value: t('featured_client') },
+      { label: t('location'), value: t('featured_location') },
+      { label: t('duration'), value: t('featured_duration') },
+      { label: t('sector'), value: t('service_mining') }
+    ];
+
+    return ''
+      + '<section class="ab-section ab-featured">'
+      + '  <div class="ab-container">'
+      + '    <div class="ab-featured__grid">'
+      + '      <div class="ab-featured__media ab-reveal">'
+      + '        <img src="' + IMG + 'project1.jpg" alt="" loading="lazy">'
+      + '        <a class="ab-featured__play" href="#" data-page="projects" aria-label="' + esc(t('view_project')) + '">'
+      + icon('arrow-up-right') + '</a>'
+      + '      </div>'
+      + '      <div class="ab-featured__body">'
+      + '        <span class="ab-eyebrow">' + esc(t('featured_eyebrow')) + '</span>'
+      + '        <h2 class="ab-featured__title">' + esc(t('featured_title')) + '</h2>'
+      + '        <p class="ab-lead">' + esc(t('featured_text')) + '</p>'
+      + '        <dl class="ab-featured__facts">'
+      + facts.map(function (f) {
+        return '<div class="ab-fact"><dt>' + esc(f.label) + '</dt><dd>' + esc(f.value) + '</dd></div>';
+      }).join('')
+      + '        </dl>'
+      + '        <a class="ab-btn ab-btn--primary" href="#" data-page="projects"><span>' + esc(t('view_project')) + '</span>' + icon('arrow-right') + '</a>'
+      + '      </div>'
+      + '    </div>'
+      + '  </div>'
+      + '</section>';
   }
 
   function pageHero(title, sub, eyebrow) {

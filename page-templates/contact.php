@@ -19,14 +19,7 @@ abidar_page_hero(
 	)
 );
 
-while ( have_posts() ) :
-	the_post();
-	if ( trim( get_the_content() ) ) {
-		echo '<section class="ab-section ab-section--tight"><div class="ab-container"><div class="ab-prose">';
-		the_content();
-		echo '</div></div></section>';
-	}
-endwhile;
+abidar_page_content();
 
 ab_render_contact( array( 'show_form' => true, 'show_map' => true ) );
 ab_render_accordion( array( 'surface' => true ) );

@@ -74,9 +74,13 @@ function abidar_logo( $args = array() ) {
  * Elementor location aware header.
  */
 function abidar_header() {
-	if ( function_exists( 'elementor_theme_do_location' ) && elementor_theme_do_location( 'header' ) ) {
+	// 1. Elementor Pro Theme Builder, or the theme's own Elementor header
+	//    template (abidar_header post type, built with Elementor Free).
+	if ( function_exists( 'abidar_render_elementor_part' ) && abidar_render_elementor_part( 'header' ) ) {
 		return;
 	}
+
+	// 2. Classic PHP fallback so a fresh install still has a header.
 	get_template_part( 'template-parts/header/default' );
 }
 
@@ -84,9 +88,10 @@ function abidar_header() {
  * Elementor location aware footer.
  */
 function abidar_footer() {
-	if ( function_exists( 'elementor_theme_do_location' ) && elementor_theme_do_location( 'footer' ) ) {
+	if ( function_exists( 'abidar_render_elementor_part' ) && abidar_render_elementor_part( 'footer' ) ) {
 		return;
 	}
+
 	get_template_part( 'template-parts/footer/default' );
 }
 
@@ -484,4 +489,39 @@ function abidar_page_url( $slug ) {
  */
 function abidar_default_text( $key ) {
 	return Abidar_Strings::get( $key, 'en', $key );
+}
+
+/**
+ * Render the current page's own content, when the editor actually wrote some.
+ *
+ * Page templates built from theme sections still respect whatever the client
+ * adds in the block / Elementor editor: their content is printed above the
+ * pre-built sections. Returns true when something was printed.
+ *
+ * @param string $class Optional wrapper class.
+ * @return bool
+ */
+function abidar_page_content( $class = 'ab-page-content' ) {
+	if ( ! in_the_loop() ) {
+		// Templates call this before the loop; rewind so the_content() works.
+		the_post();
+	}
+
+	$content = get_the_content();
+
+	if ( '' === trim( (string) $content ) ) {
+		return false;
+	}
+
+	echo '<section class="ab-section ' . esc_attr( $class ) . '"><div class="ab-container ab-prose">';
+	the_content();
+	wp_link_pages(
+		array(
+			'before' => '<nav class="ab-page-links"><span>' . esc_html( abidar_copy( 'pages' ) ) . '</span>',
+			'after'  => '</nav>',
+		)
+	);
+	echo '</div></section>';
+
+	return true;
 }

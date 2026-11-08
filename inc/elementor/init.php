@@ -44,9 +44,13 @@ add_action( 'elementor/elements/categories_registered', 'abidar_elementor_widget
  * @param \Elementor\Widgets_Manager $manager Manager.
  */
 function abidar_register_elementor_widgets( $manager ) {
+	require_once ABIDAR_DIR . '/inc/elementor/helpers.php';
 	require_once ABIDAR_DIR . '/inc/elementor/class-abidar-widget-base.php';
 
 	$widgets = array(
+		'topbar',
+		'header',
+		'footer',
 		'hero',
 		'services',
 		'about',

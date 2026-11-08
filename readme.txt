@@ -53,4 +53,8 @@ This theme bundles the following third-party resources:
 == Changelog ==
 
 = 1.0.0 =
-* Initial release: trilingual engine, 15 Elementor widgets, theme options, demo importer, block bridge, 6 page templates.
+* Initial release: trilingual engine, 18 Elementor widgets, theme options, demo importer, block bridge, 6 page templates.
+* 243 Style-tab controls across the 15 widgets (average 16 per widget, 49 typography groups), all responsive.
+* theme.json adds the palette, font families, shadow presets and layout sizes to the block editor.
+* Comments: dedicated stylesheet instead of inline styles, nested reply threads, awaiting-moderation badge, print stylesheet.
+* 513 translatable strings shipped as a complete Persian .po/.mo translation.

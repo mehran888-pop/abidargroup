@@ -161,6 +161,24 @@ class Abidar_Widget_Team extends Abidar_Widget_Base {
 			)
 		);
 
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			array(
+				'name'     => 'name_typography',
+				'label'    => esc_html__( 'Name typography', 'abidar' ),
+				'selector' => '{{WRAPPER}} .ab-team-card__name',
+			)
+		);
+
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			array(
+				'name'     => 'role_typography',
+				'label'    => esc_html__( 'Role typography', 'abidar' ),
+				'selector' => '{{WRAPPER}} .ab-team-card__role',
+			)
+		);
+
 		$this->add_control(
 			'name_color',
 			array(

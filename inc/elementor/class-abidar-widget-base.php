@@ -253,6 +253,7 @@ abstract class Abidar_Widget_Base extends Widget_Base {
 			Group_Control_Background::get_type(),
 			array(
 				'name'     => 'section_background',
+				'label'    => esc_html__( 'Section background', 'abidar' ),
 				'types'    => array( 'classic', 'gradient' ),
 				'selector' => $wrapper,
 			)
@@ -282,6 +283,7 @@ abstract class Abidar_Widget_Base extends Widget_Base {
 			Group_Control_Border::get_type(),
 			array(
 				'name'     => 'section_border',
+				'label'    => esc_html__( 'Section border', 'abidar' ),
 				'selector' => $wrapper,
 			)
 		);
@@ -300,6 +302,7 @@ abstract class Abidar_Widget_Base extends Widget_Base {
 			Group_Control_Box_Shadow::get_type(),
 			array(
 				'name'     => 'section_shadow',
+				'label'    => esc_html__( 'Section box shadow', 'abidar' ),
 				'selector' => $wrapper,
 			)
 		);

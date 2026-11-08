@@ -76,6 +76,33 @@ class Abidar_Widget_Posts extends Abidar_Widget_Base {
 			)
 		);
 
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			array(
+				'name'     => 'title_typography',
+				'label'    => esc_html__( 'Card title typography', 'abidar' ),
+				'selector' => '{{WRAPPER}} .ab-post-card__title',
+			)
+		);
+
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			array(
+				'name'     => 'excerpt_typography',
+				'label'    => esc_html__( 'Excerpt typography', 'abidar' ),
+				'selector' => '{{WRAPPER}} .ab-post-card__excerpt',
+			)
+		);
+
+		$this->add_control(
+			'meta_color',
+			array(
+				'label'     => esc_html__( 'Meta colour', 'abidar' ),
+				'type'      => Controls_Manager::COLOR,
+				'selectors' => array( '{{WRAPPER}} .ab-post-card__foot' => 'color: {{VALUE}};' ),
+			)
+		);
+
 		$this->add_control(
 			'card_bg',
 			array(
@@ -97,7 +124,8 @@ class Abidar_Widget_Posts extends Abidar_Widget_Base {
 		$this->add_group_control(
 			Group_Control_Typography::get_type(),
 			array(
-				'name'     => 'title_typography',
+				'name'     => 'card_title_typography',
+				'label'     => esc_html__( 'Card title typography', 'abidar' ),
 				'selector' => '{{WRAPPER}} .ab-post-card__title',
 			)
 		);

@@ -95,6 +95,24 @@ class Abidar_Widget_Accordion extends Abidar_Widget_Base {
 			)
 		);
 
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			array(
+				'name'     => 'question_typography',
+				'label'    => esc_html__( 'Question typography', 'abidar' ),
+				'selector' => '{{WRAPPER}} .ab-accordion__btn',
+			)
+		);
+
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			array(
+				'name'     => 'answer_typography',
+				'label'    => esc_html__( 'Answer typography', 'abidar' ),
+				'selector' => '{{WRAPPER}} .ab-accordion__panel-inner',
+			)
+		);
+
 		$this->add_control(
 			'item_bg',
 			array(

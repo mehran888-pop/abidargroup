@@ -58,6 +58,8 @@ require ABIDAR_DIR . '/inc/admin/demo-import.php';
 /**
  * Elementor integration (widgets, header/footer locations).
  */
+require ABIDAR_DIR . '/inc/elementor/helpers.php';
+require ABIDAR_DIR . '/inc/elementor/parts.php';
 require ABIDAR_DIR . '/inc/elementor/init.php';
 
 /**

@@ -119,6 +119,33 @@ class Abidar_Widget_Process extends Abidar_Widget_Base {
 			)
 		);
 
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			array(
+				'name'     => 'title_typography',
+				'label'    => esc_html__( 'Step title typography', 'abidar' ),
+				'selector' => '{{WRAPPER}} .ab-step__title',
+			)
+		);
+
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			array(
+				'name'     => 'text_typography',
+				'label'    => esc_html__( 'Step text typography', 'abidar' ),
+				'selector' => '{{WRAPPER}} .ab-step__text',
+			)
+		);
+
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			array(
+				'name'     => 'dot_typography',
+				'label'    => esc_html__( 'Number typography', 'abidar' ),
+				'selector' => '{{WRAPPER}} .ab-step__dot',
+			)
+		);
+
 		$this->add_control(
 			'dot_bg',
 			array(

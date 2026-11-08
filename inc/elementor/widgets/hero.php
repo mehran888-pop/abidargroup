@@ -59,7 +59,7 @@ class Abidar_Widget_Hero extends Abidar_Widget_Base {
 			array(
 				'label'   => esc_html__( 'Eyebrow', 'abidar' ),
 				'type'    => Controls_Manager::TEXT,
-				'default' => abidar_copy( 'hero_eyebrow' ),
+				'default' => $this->copy_field( 'eyebrow', 'hero_eyebrow' ),
 				'dynamic' => array( 'active' => true ),
 			)
 		);
@@ -70,7 +70,7 @@ class Abidar_Widget_Hero extends Abidar_Widget_Base {
 				'label'       => esc_html__( 'Headline', 'abidar' ),
 				'type'        => Controls_Manager::TEXTAREA,
 				'rows'        => 3,
-				'default'     => abidar_copy( 'hero_title' ),
+				'default'     => $this->copy_field( 'title', 'hero_title' ),
 				'label_block' => true,
 				'dynamic'     => array( 'active' => true ),
 			)
@@ -82,7 +82,7 @@ class Abidar_Widget_Hero extends Abidar_Widget_Base {
 				'label'   => esc_html__( 'Description', 'abidar' ),
 				'type'    => Controls_Manager::TEXTAREA,
 				'rows'    => 4,
-				'default' => abidar_copy( 'hero_text' ),
+				'default' => $this->copy_field( 'text', 'hero_text' ),
 				'dynamic' => array( 'active' => true ),
 			)
 		);
@@ -92,7 +92,7 @@ class Abidar_Widget_Hero extends Abidar_Widget_Base {
 			array(
 				'label'   => esc_html__( 'Primary button', 'abidar' ),
 				'type'    => Controls_Manager::TEXT,
-				'default' => abidar_copy( 'hero_cta1' ),
+				'default' => $this->copy_field( 'btn1_text', 'hero_cta1' ),
 			)
 		);
 
@@ -111,7 +111,7 @@ class Abidar_Widget_Hero extends Abidar_Widget_Base {
 			array(
 				'label'     => esc_html__( 'Secondary button', 'abidar' ),
 				'type'      => Controls_Manager::TEXT,
-				'default'   => abidar_copy( 'hero_cta2' ),
+				'default'   => $this->copy_field( 'btn2_text', 'hero_cta2' ),
 				'separator' => 'before',
 			)
 		);
@@ -262,6 +262,7 @@ class Abidar_Widget_Hero extends Abidar_Widget_Base {
 			Group_Control_Typography::get_type(),
 			array(
 				'name'     => 'title_typography',
+				'label'     => esc_html__( 'Title typography', 'abidar' ),
 				'selector' => '{{WRAPPER}} .ab-hero__title',
 			)
 		);
@@ -367,6 +368,103 @@ class Abidar_Widget_Hero extends Abidar_Widget_Base {
 		);
 
 		$this->end_controls_section();
+
+		// Same background / spacing / border / shadow group as every other section.
+		/* ——— Style: description, eyebrow, stats ——— */
+		$this->start_controls_section(
+			'style_text',
+			array(
+				'label' => esc_html__( 'Description & stats', 'abidar' ),
+				'tab'   => Controls_Manager::TAB_STYLE,
+			)
+		);
+
+		$this->add_control(
+			'eyebrow_color',
+			array(
+				'label'     => esc_html__( 'Eyebrow colour', 'abidar' ),
+				'type'      => Controls_Manager::COLOR,
+				'selectors' => array( '{{WRAPPER}} .ab-eyebrow' => 'color: {{VALUE}};' ),
+			)
+		);
+
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			array(
+				'name'     => 'eyebrow_typography',
+				'label'    => esc_html__( 'Eyebrow typography', 'abidar' ),
+				'selector' => '{{WRAPPER}} .ab-eyebrow',
+			)
+		);
+
+		$this->add_control(
+			'text_color',
+			array(
+				'label'     => esc_html__( 'Description colour', 'abidar' ),
+				'type'      => Controls_Manager::COLOR,
+				'separator' => 'before',
+				'selectors' => array( '{{WRAPPER}} .ab-hero__text' => 'color: {{VALUE}};' ),
+			)
+		);
+
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			array(
+				'name'     => 'text_typography',
+				'label'    => esc_html__( 'Description typography', 'abidar' ),
+				'selector' => '{{WRAPPER}} .ab-hero__text',
+			)
+		);
+
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			array(
+				'name'     => 'stat_number_typography',
+				'label'    => esc_html__( 'Stat number typography', 'abidar' ),
+				'separator' => 'before',
+				'selector' => '{{WRAPPER}} .ab-hero__stat-num',
+			)
+		);
+
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			array(
+				'name'     => 'stat_label_typography',
+				'label'    => esc_html__( 'Stat label typography', 'abidar' ),
+				'selector' => '{{WRAPPER}} .ab-hero__stat-label',
+			)
+		);
+
+		$this->add_control(
+			'stat_number_color',
+			array(
+				'label'     => esc_html__( 'Number colour', 'abidar' ),
+				'type'      => Controls_Manager::COLOR,
+				'selectors' => array( '{{WRAPPER}} .ab-hero__stat-num' => 'color: {{VALUE}};' ),
+			)
+		);
+
+		$this->add_control(
+			'stat_label_color',
+			array(
+				'label'     => esc_html__( 'Label colour', 'abidar' ),
+				'type'      => Controls_Manager::COLOR,
+				'selectors' => array( '{{WRAPPER}} .ab-hero__stat-label' => 'color: {{VALUE}};' ),
+			)
+		);
+
+		$this->add_control(
+			'stat_cell_bg',
+			array(
+				'label'     => esc_html__( 'Cell background', 'abidar' ),
+				'type'      => Controls_Manager::COLOR,
+				'selectors' => array( '{{WRAPPER}} .ab-hero__stat' => 'background: {{VALUE}};' ),
+			)
+		);
+
+		$this->end_controls_section();
+
+		$this->add_section_style_controls( '{{WRAPPER}} .ab-hero' );
 	}
 
 	/**
@@ -393,25 +491,7 @@ class Abidar_Widget_Hero extends Abidar_Widget_Base {
 	 * @return array
 	 */
 	protected function localize_defaults( $settings ) {
-		$map = array(
-			'eyebrow'  => 'hero_eyebrow',
-			'title'    => 'hero_title',
-			'text'     => 'hero_text',
-			'btn1_text'=> 'hero_cta1',
-			'btn2_text'=> 'hero_cta2',
-		);
-
-		$all = array();
-
-		foreach ( $map as $field => $key ) {
-			$all[ $field ] = array();
-			foreach ( array( 'fa', 'en', 'zh' ) as $lang ) {
-				$all[ $field ][] = Abidar_Strings::get( $key, $lang );
-			}
-			if ( in_array( $settings[ $field ], $all[ $field ], true ) ) {
-				$settings[ $field ] = abidar_copy( $key );
-			}
-		}
+		$settings = $this->localize_settings( $settings );
 
 		// Stat labels.
 		$known = array();

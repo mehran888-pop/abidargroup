@@ -147,6 +147,7 @@ class Abidar_Widget_Cta extends Abidar_Widget_Base {
 			Group_Control_Typography::get_type(),
 			array(
 				'name'     => 'title_typography',
+				'label'     => esc_html__( 'Title typography', 'abidar' ),
 				'selector' => '{{WRAPPER}} .ab-cta__title',
 			)
 		);

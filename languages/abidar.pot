@@ -30,6 +30,10 @@ msgid "7 pages: Home, About, Services, Projects, Team, Contact, News"
 msgstr ""
 
 #: inc/admin/options.php
+msgid "A ready-made header and footer are created automatically the first time Elementor is active, so you can start by editing rather than building from scratch. If you also use Elementor Pro, its Theme Builder still takes priority."
+msgstr ""
+
+#: inc/admin/options.php
 #: inc/elementor/init.php
 msgid "Abidar"
 msgstr ""
@@ -62,12 +66,32 @@ msgstr ""
 msgid "Abidar Sand"
 msgstr ""
 
+#: inc/elementor/parts.php
+msgid "Abidar footer (pre-built)"
+msgstr ""
+
+#: inc/elementor/parts.php
+msgid "Abidar header (pre-built)"
+msgstr ""
+
 #: inc/blocks.php
 msgid "Abidar section"
 msgstr ""
 
+#: inc/elementor/widgets/footer.php
+msgid "Abidar site footer"
+msgstr ""
+
+#: inc/elementor/widgets/header.php
+msgid "Abidar site header"
+msgstr ""
+
 #: inc/admin/options.php
 msgid "Abidar theme"
+msgstr ""
+
+#: inc/elementor/widgets/topbar.php
+msgid "Abidar top bar"
 msgstr ""
 
 #: inc/widgets/class-abidar-contact-widget.php
@@ -87,6 +111,10 @@ msgstr ""
 msgid "About split"
 msgstr ""
 
+#: inc/elementor/widgets/footer.php
+msgid "About text"
+msgstr ""
+
 #: inc/setup.php
 msgid "About us"
 msgstr ""
@@ -101,6 +129,18 @@ msgstr ""
 
 #: inc/elementor/widgets/lang-switcher.php
 msgid "Active colour"
+msgstr ""
+
+#: inc/elementor/parts.php
+msgid "Add a template, click “Edit with Elementor”, then drag in the “Abidar header” or “Abidar footer” widgets. The published template automatically replaces the theme default."
+msgstr ""
+
+#: inc/elementor/parts.php
+msgid "Add new"
+msgstr ""
+
+#: inc/elementor/parts.php
+msgid "Add new %s"
 msgstr ""
 
 #: inc/post-types.php
@@ -132,7 +172,12 @@ msgstr ""
 msgid "Advanced"
 msgstr ""
 
+#: inc/admin/options.php
+msgid "Advanced nav / mega menu"
+msgstr ""
+
 #: inc/elementor/class-abidar-widget-base.php
+#: inc/elementor/widgets/header.php
 #: inc/elementor/widgets/lang-switcher.php
 msgid "Alignment"
 msgstr ""
@@ -146,12 +191,20 @@ msgstr ""
 msgid "Animated counters"
 msgstr ""
 
+#: inc/admin/options.php
+msgid "Announcement bar with phone, email, working hours, social icons, language switcher and an optional dismiss button."
+msgstr ""
+
 #: inc/elementor/widgets/accordion.php
 msgid "Answer"
 msgstr ""
 
 #: inc/elementor/widgets/accordion.php
 msgid "Answer colour"
+msgstr ""
+
+#: inc/elementor/widgets/accordion.php
+msgid "Answer typography"
 msgstr ""
 
 #: inc/elementor/widgets/cta.php
@@ -170,10 +223,13 @@ msgstr ""
 msgid "Back-to-top button"
 msgstr ""
 
+#: inc/elementor/widgets/footer.php
+#: inc/elementor/widgets/header.php
 #: inc/elementor/widgets/hero.php
 #: inc/elementor/widgets/posts.php
 #: inc/elementor/widgets/services.php
 #: inc/elementor/widgets/testimonials.php
+#: inc/elementor/widgets/topbar.php
 msgid "Background"
 msgstr ""
 
@@ -199,8 +255,17 @@ msgstr ""
 msgid "Badge text"
 msgstr ""
 
+#: inc/elementor/widgets/header.php
+#: inc/elementor/widgets/topbar.php
+msgid "Bar"
+msgstr ""
+
 #: inc/admin/options.php
 msgid "Base font size (px)"
+msgstr ""
+
+#: inc/elementor/widgets/footer.php
+msgid "Base text colour"
 msgstr ""
 
 #: inc/admin/options.php
@@ -216,6 +281,7 @@ msgid "Blog cards queried by category/count, with localised dates and read time.
 msgstr ""
 
 #: inc/setup.php
+#: sidebar.php
 msgid "Blog sidebar"
 msgstr ""
 
@@ -227,9 +293,30 @@ msgstr ""
 msgid "Body text"
 msgstr ""
 
+#: inc/elementor/widgets/about.php
+msgid "Body typography"
+msgstr ""
+
 #: inc/elementor/class-abidar-widget-base.php
 #: inc/elementor/widgets/services.php
 msgid "Border radius"
+msgstr ""
+
+#: inc/elementor/widgets/footer.php
+msgid "Bottom bar"
+msgstr ""
+
+#: inc/elementor/widgets/header.php
+msgid "Bottom border"
+msgstr ""
+
+#: inc/elementor/widgets/header.php
+#: inc/elementor/widgets/topbar.php
+msgid "Box shadow"
+msgstr ""
+
+#: inc/elementor/widgets/footer.php
+msgid "Brand column"
 msgstr ""
 
 #: inc/admin/options.php
@@ -240,11 +327,29 @@ msgstr ""
 msgid "Breadcrumb"
 msgstr ""
 
+#: inc/elementor/widgets/page-title.php
+msgid "Breadcrumb colour"
+msgstr ""
+
+#: inc/elementor/widgets/page-title.php
+msgid "Breadcrumb typography"
+msgstr ""
+
 #: inc/admin/demo-import.php
 msgid "Build with Elementor"
 msgstr ""
 
+#: inc/elementor/parts.php
+msgid "Build your header and footer with Elementor Free."
+msgstr ""
+
+#: inc/elementor/widgets/header.php
+msgid "Button & actions"
+msgstr ""
+
 #: inc/elementor/widgets/contact.php
+#: inc/elementor/widgets/footer.php
+#: inc/elementor/widgets/header.php
 msgid "Button background"
 msgstr ""
 
@@ -258,8 +363,17 @@ msgstr ""
 msgid "Button link"
 msgstr ""
 
+#: inc/elementor/widgets/header.php
 #: inc/elementor/widgets/hero.php
 msgid "Button radius"
+msgstr ""
+
+#: inc/elementor/widgets/header.php
+msgid "Button text"
+msgstr ""
+
+#: inc/elementor/widgets/header.php
+msgid "Button typography"
 msgstr ""
 
 #: inc/elementor/widgets/hero.php
@@ -268,6 +382,14 @@ msgstr ""
 
 #: inc/demo-content.php
 msgid "Buyers judge stone long before it reaches the site."
+msgstr ""
+
+#: inc/elementor/widgets/header.php
+msgid "CTA label"
+msgstr ""
+
+#: inc/elementor/widgets/header.php
+msgid "CTA link"
 msgstr ""
 
 #: inc/admin/options.php
@@ -287,7 +409,19 @@ msgid "Card"
 msgstr ""
 
 #: inc/elementor/widgets/services.php
+msgid "Card box shadow"
+msgstr ""
+
+#: inc/elementor/widgets/testimonials.php
+msgid "Card quote typography"
+msgstr ""
+
+#: inc/elementor/widgets/services.php
 msgid "Card style"
+msgstr ""
+
+#: inc/elementor/widgets/posts.php
+msgid "Card title typography"
 msgstr ""
 
 #: inc/elementor/widgets/projects.php
@@ -308,12 +442,15 @@ msgid "Cell radius"
 msgstr ""
 
 #: inc/elementor/class-abidar-widget-base.php
+#: inc/elementor/widgets/header.php
 #: inc/elementor/widgets/lang-switcher.php
 #: inc/elementor/widgets/team.php
+#: inc/elementor/widgets/topbar.php
 msgid "Center"
 msgstr ""
 
 #: inc/admin/options.php
+#: inc/elementor/widgets/header.php
 msgid "Centered logo"
 msgstr ""
 
@@ -323,6 +460,10 @@ msgstr ""
 
 #: inc/admin/options.php
 msgid "Classic (logo left, menu right)"
+msgstr ""
+
+#: inc/elementor/widgets/header.php
+msgid "Classic (logo start, menu end)"
 msgstr ""
 
 #: inc/elementor/widgets/testimonials.php
@@ -335,6 +476,8 @@ msgstr ""
 msgid "Client marquee"
 msgstr ""
 
+#: inc/elementor/widgets/header.php
+#: inc/elementor/widgets/topbar.php
 #: template-parts/header/default.php
 msgid "Close"
 msgstr ""
@@ -352,6 +495,30 @@ msgstr ""
 msgid "Colours"
 msgstr ""
 
+#: inc/elementor/widgets/footer.php
+msgid "Column 1 menu"
+msgstr ""
+
+#: inc/elementor/widgets/footer.php
+msgid "Column 1 title"
+msgstr ""
+
+#: inc/elementor/widgets/footer.php
+msgid "Column 2 menu"
+msgstr ""
+
+#: inc/elementor/widgets/footer.php
+msgid "Column 2 title"
+msgstr ""
+
+#: inc/elementor/widgets/footer.php
+msgid "Column title colour"
+msgstr ""
+
+#: inc/elementor/widgets/footer.php
+msgid "Column title typography"
+msgstr ""
+
 #: inc/elementor/widgets/counters.php
 #: inc/elementor/widgets/services.php
 #: inc/elementor/widgets/team.php
@@ -365,6 +532,14 @@ msgstr ""
 
 #: inc/ajax.php
 msgid "Company"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Complete footer: brand column, two menu columns, contact block, newsletter, social bar and legal row. Drop it into a Footer template."
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Complete header: top bar, logo, up to three-level menu, language switcher, search, CTA and mobile drawer. Drop it into a Header template — no Elementor Pro needed."
 msgstr ""
 
 #: inc/meta-boxes.php
@@ -381,6 +556,10 @@ msgstr ""
 
 #: inc/admin/options.php
 msgid "Contact & forms"
+msgstr ""
+
+#: inc/elementor/widgets/footer.php
+msgid "Contact & newsletter"
 msgstr ""
 
 #: inc/admin/options.php
@@ -422,14 +601,20 @@ msgstr ""
 msgid "Content"
 msgstr ""
 
+#: inc/elementor/widgets/topbar.php
+msgid "Content alignment"
+msgstr ""
+
 #: inc/elementor/widgets/hero.php
 msgid "Content max width"
 msgstr ""
 
 #: inc/admin/options.php
+#: inc/elementor/widgets/footer.php
 msgid "Copyright line"
 msgstr ""
 
+#: inc/admin/options.php
 #: inc/elementor/widgets/counters.php
 msgid "Counters"
 msgstr ""
@@ -486,12 +671,35 @@ msgstr ""
 msgid "Description"
 msgstr ""
 
+#: inc/elementor/widgets/hero.php
+msgid "Description & stats"
+msgstr ""
+
+#: inc/elementor/widgets/hero.php
+#: inc/elementor/widgets/page-title.php
 #: inc/elementor/widgets/services.php
 msgid "Description colour"
 msgstr ""
 
+#: inc/elementor/widgets/hero.php
+#: inc/elementor/widgets/page-title.php
+msgid "Description typography"
+msgstr ""
+
 #: inc/meta-boxes.php
 msgid "Details"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Discard unsaved changes?"
+msgstr ""
+
+#: inc/elementor/widgets/topbar.php
+msgid "Dismissible"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Documentation page"
 msgstr ""
 
 #: inc/elementor/widgets/process.php
@@ -506,12 +714,28 @@ msgstr ""
 msgid "Dropdown"
 msgstr ""
 
+#: inc/elementor/widgets/header.php
+msgid "Dropdown background"
+msgstr ""
+
+#: inc/elementor/widgets/header.php
+msgid "Dropdown radius"
+msgstr ""
+
 #: inc/meta-boxes.php
 msgid "Duration"
 msgstr ""
 
 #: inc/admin/options.php
 msgid "Edit any string in all three languages. Empty fields fall back to the built-in translation."
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Edit footer"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Edit header"
 msgstr ""
 
 #: inc/post-types.php
@@ -526,8 +750,16 @@ msgstr ""
 msgid "Edit team member"
 msgstr ""
 
+#: inc/elementor/parts.php
+msgid "Edit template"
+msgstr ""
+
 #: inc/admin/demo-import.php
 msgid "Edit the Home page with Elementor."
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Elementor Free has no Theme Builder — this theme adds its own. Open Abidar → Headers (or Footers), click “Add new”, then “Edit with Elementor” and drag in the “Abidar site header” / “Abidar site footer” widgets. Publish, and the theme renders your template everywhere instead of the built-in header and footer."
 msgstr ""
 
 #: inc/admin/options.php
@@ -546,6 +778,10 @@ msgstr ""
 msgid "Email"
 msgstr ""
 
+#: inc/elementor/widgets/footer.php
+msgid "Email address"
+msgstr ""
+
 #: inc/demo-content.php
 msgid "Empowered stop-work authority"
 msgstr ""
@@ -555,6 +791,7 @@ msgid "Enable preloader"
 msgstr ""
 
 #: inc/elementor/class-abidar-widget-base.php
+#: inc/elementor/widgets/header.php
 #: inc/elementor/widgets/lang-switcher.php
 msgid "End"
 msgstr ""
@@ -571,6 +808,10 @@ msgstr ""
 msgid "Excerpt length (words)"
 msgstr ""
 
+#: inc/elementor/widgets/posts.php
+msgid "Excerpt typography"
+msgstr ""
+
 #: inc/admin/demo-import.php
 msgid "Existing content is never deleted. Importing twice creates duplicates, so run it once."
 msgstr ""
@@ -583,11 +824,21 @@ msgid "Eyebrow"
 msgstr ""
 
 #: inc/elementor/class-abidar-widget-base.php
+#: inc/elementor/widgets/hero.php
+#: inc/elementor/widgets/page-title.php
 msgid "Eyebrow colour"
+msgstr ""
+
+#: inc/elementor/widgets/hero.php
+msgid "Eyebrow typography"
 msgstr ""
 
 #: inc/admin/options.php
 msgid "FA / EN / ZH switcher styled as inline, dropdown or flags — usable in header, footer or any section."
+msgstr ""
+
+#: inc/admin/options.php
+msgid "FAQ"
 msgstr ""
 
 #: inc/admin/options.php
@@ -601,6 +852,10 @@ msgstr ""
 
 #: inc/elementor/widgets/projects.php
 msgid "Feature first project (wide)"
+msgstr ""
+
+#: inc/elementor/widgets/footer.php
+msgid "Field background"
 msgstr ""
 
 #: inc/admin/options.php
@@ -636,12 +891,28 @@ msgstr ""
 msgid "Footer menu"
 msgstr ""
 
+#: inc/elementor/widgets/footer.php
+msgid "Footer shell"
+msgstr ""
+
+#: inc/elementor/parts.php
+msgid "Footer template"
+msgstr ""
+
+#: inc/elementor/parts.php
+msgid "Footers"
+msgstr ""
+
 #: inc/elementor/widgets/contact.php
 msgid "Form"
 msgstr ""
 
 #: inc/elementor/widgets/contact.php
 msgid "Form background"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Form fields"
 msgstr ""
 
 #: inc/admin/options.php
@@ -652,8 +923,14 @@ msgstr ""
 msgid "Gallery image IDs (comma separated)"
 msgstr ""
 
+#: inc/elementor/widgets/header.php
 #: inc/elementor/widgets/marquee.php
+#: inc/elementor/widgets/topbar.php
 msgid "Gap"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "General & meta"
 msgstr ""
 
 #: inc/demo-content.php
@@ -661,7 +938,7 @@ msgid "Geological modelling is the foundation of a predictable mine plan."
 msgstr ""
 
 #: inc/admin/options.php
-msgid "Go to Templates → Theme Builder → Header (or Footer) → Add New, design it, and publish. The theme automatically replaces its default header/footer. The same works for single project and archive templates."
+msgid "Go to theme options"
 msgstr ""
 
 #: inc/admin/options.php
@@ -669,11 +946,12 @@ msgid "Google Maps embed URL"
 msgstr ""
 
 #: inc/admin/options.php
+#: inc/elementor/widgets/header.php
 msgid "Header"
 msgstr ""
 
 #: inc/admin/options.php
-msgid "Header & footer with Elementor"
+msgid "Header & footer with Elementor Free"
 msgstr ""
 
 #: inc/admin/options.php
@@ -688,8 +966,20 @@ msgstr ""
 msgid "Header layout"
 msgstr ""
 
+#: inc/elementor/parts.php
+msgid "Header template"
+msgstr ""
+
+#: inc/elementor/parts.php
+msgid "Headers"
+msgstr ""
+
 #: inc/admin/options.php
 msgid "Heading font"
+msgstr ""
+
+#: inc/elementor/widgets/footer.php
+msgid "Headings & links"
 msgstr ""
 
 #: inc/admin/options.php
@@ -713,12 +1003,21 @@ msgstr ""
 msgid "Home"
 msgstr ""
 
+#: inc/elementor/widgets/header.php
+msgid "Hover / active colour"
+msgstr ""
+
+#: inc/elementor/widgets/footer.php
+msgid "Hover colour"
+msgstr ""
+
 #: inc/elementor/widgets/counters.php
 #: inc/elementor/widgets/process.php
 #: inc/elementor/widgets/services.php
 msgid "Icon"
 msgstr ""
 
+#: inc/elementor/widgets/footer.php
 #: inc/elementor/widgets/services.php
 msgid "Icon background"
 msgstr ""
@@ -731,13 +1030,21 @@ msgstr ""
 msgid "Icon cards or image cards for services, with hover states, read-more links and optional category filter."
 msgstr ""
 
+#: inc/elementor/widgets/contact.php
 #: inc/elementor/widgets/counters.php
+#: inc/elementor/widgets/footer.php
+#: inc/elementor/widgets/header.php
 #: inc/elementor/widgets/services.php
+#: inc/elementor/widgets/topbar.php
 msgid "Icon colour"
 msgstr ""
 
 #: inc/meta-boxes.php
 msgid "Icon key (see inc/icons.php)"
+msgstr ""
+
+#: inc/elementor/widgets/footer.php
+msgid "Icon size"
 msgstr ""
 
 #: inc/elementor/widgets/about.php
@@ -797,11 +1104,20 @@ msgstr ""
 msgid "Item radius"
 msgstr ""
 
+#: inc/elementor/widgets/lang-switcher.php
+#: inc/elementor/widgets/marquee.php
+msgid "Item typography"
+msgstr ""
+
 #: inc/elementor/class-abidar-widget-base.php
 #: inc/elementor/widgets/accordion.php
 #: inc/elementor/widgets/lang-switcher.php
 #: inc/elementor/widgets/marquee.php
 msgid "Items"
+msgstr ""
+
+#: inc/elementor/widgets/header.php
+msgid "Keeps the bar on screen while scrolling."
 msgstr ""
 
 #: inc/elementor/widgets/hero.php
@@ -820,6 +1136,10 @@ msgstr ""
 #: inc/elementor/widgets/counters.php
 #: inc/elementor/widgets/hero.php
 msgid "Label colour"
+msgstr ""
+
+#: inc/elementor/widgets/contact.php
+msgid "Label typography"
 msgstr ""
 
 #: inc/elementor/widgets/team.php
@@ -852,8 +1172,31 @@ msgstr ""
 msgid "Latest posts"
 msgstr ""
 
+#: inc/elementor/widgets/header.php
+msgid "Layout"
+msgstr ""
+
 #: inc/elementor/widgets/services.php
 msgid "Link"
+msgstr ""
+
+#: inc/elementor/widgets/footer.php
+#: inc/elementor/widgets/header.php
+#: inc/elementor/widgets/topbar.php
+msgid "Link colour"
+msgstr ""
+
+#: inc/elementor/widgets/footer.php
+msgid "Link columns"
+msgstr ""
+
+#: inc/elementor/widgets/footer.php
+msgid "Link hover colour"
+msgstr ""
+
+#: inc/elementor/widgets/footer.php
+#: inc/elementor/widgets/header.php
+msgid "Link typography"
 msgstr ""
 
 #: inc/elementor/widgets/team.php
@@ -877,6 +1220,14 @@ msgstr ""
 msgid "Logo image"
 msgstr ""
 
+#: inc/elementor/widgets/marquee.php
+msgid "Logo typography"
+msgstr ""
+
+#: inc/elementor/widgets/header.php
+msgid "Logo width"
+msgstr ""
+
 #: inc/admin/options.php
 msgid "Logo width (px)"
 msgstr ""
@@ -897,10 +1248,20 @@ msgstr ""
 msgid "Member card"
 msgstr ""
 
+#: inc/elementor/widgets/header.php
 #: template-parts/header/default.php
 msgid "Menu"
 msgstr ""
 
+#: inc/elementor/widgets/posts.php
+msgid "Meta colour"
+msgstr ""
+
+#: inc/elementor/widgets/header.php
+msgid "Minimal (logo + burger)"
+msgstr ""
+
+#: inc/elementor/widgets/header.php
 #: inc/elementor/widgets/hero.php
 #: inc/elementor/widgets/page-title.php
 #: inc/elementor/widgets/projects.php
@@ -911,8 +1272,12 @@ msgstr ""
 msgid "Mining · Oil & Gas · Natural stone"
 msgstr ""
 
-#: template-parts/header/default.php
-msgid "Mobile menu"
+#: inc/elementor/widgets/header.php
+msgid "Mobile drawer"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Multi-column mega panel with icon and description per link, an optional CTA card, and a mobile drawer. Works from a WordPress menu or a repeater."
 msgstr ""
 
 #: inc/admin/options.php
@@ -924,7 +1289,13 @@ msgid "Name"
 msgstr ""
 
 #: inc/elementor/widgets/team.php
+#: inc/elementor/widgets/testimonials.php
 msgid "Name colour"
+msgstr ""
+
+#: inc/elementor/widgets/team.php
+#: inc/elementor/widgets/testimonials.php
+msgid "Name typography"
 msgstr ""
 
 #: inc/admin/options.php
@@ -939,6 +1310,18 @@ msgstr ""
 msgid "New project"
 msgstr ""
 
+#: inc/elementor/parts.php
+msgid "New template"
+msgstr ""
+
+#: inc/elementor/widgets/footer.php
+msgid "Newsletter"
+msgstr ""
+
+#: inc/elementor/widgets/footer.php
+msgid "Newsletter title"
+msgstr ""
+
 #: inc/admin/options.php
 msgid "No image selected"
 msgstr ""
@@ -949,6 +1332,22 @@ msgstr ""
 
 #: inc/post-types.php
 msgid "No projects in trash"
+msgstr ""
+
+#: inc/elementor/parts.php
+msgid "No templates in trash"
+msgstr ""
+
+#: inc/elementor/parts.php
+msgid "No templates yet. Add one and build it with Elementor."
+msgstr ""
+
+#: inc/elementor/widgets/topbar.php
+msgid "Note"
+msgstr ""
+
+#: inc/elementor/widgets/topbar.php
+msgid "Note icon"
 msgstr ""
 
 #: inc/elementor/widgets/counters.php
@@ -967,6 +1366,11 @@ msgstr ""
 
 #: inc/elementor/widgets/projects.php
 msgid "Number of projects"
+msgstr ""
+
+#: inc/elementor/widgets/counters.php
+#: inc/elementor/widgets/process.php
+msgid "Number typography"
 msgstr ""
 
 #: inc/admin/options.php
@@ -993,6 +1397,14 @@ msgstr ""
 msgid "Ongoing"
 msgstr ""
 
+#: inc/elementor/widgets/header.php
+msgid "Only applies when the header sits above a hero section."
+msgstr ""
+
+#: inc/elementor/parts.php
+msgid "Only one header and one footer template is used at a time: the first published one. Elementor Pro Theme Builder still takes priority if you use it."
+msgstr ""
+
 #: inc/elementor/widgets/accordion.php
 msgid "Only one open at a time"
 msgstr ""
@@ -1006,6 +1418,7 @@ msgid "Option tabs"
 msgstr ""
 
 #: inc/elementor/widgets/cta.php
+#: inc/elementor/widgets/page-title.php
 msgid "Overlay colour (start)"
 msgstr ""
 
@@ -1013,12 +1426,16 @@ msgstr ""
 msgid "Overlay gradient start"
 msgstr ""
 
+#: inc/elementor/widgets/page-title.php
 #: inc/elementor/widgets/projects.php
 msgid "Overlay strength"
 msgstr ""
 
 #: inc/elementor/class-abidar-widget-base.php
+#: inc/elementor/widgets/footer.php
+#: inc/elementor/widgets/header.php
 #: inc/elementor/widgets/services.php
+#: inc/elementor/widgets/topbar.php
 msgid "Padding"
 msgstr ""
 
@@ -1074,6 +1491,10 @@ msgstr ""
 msgid "Prefer Elementor? Build a header in Templates → Theme Builder → Header and it will replace this one automatically."
 msgstr ""
 
+#: inc/elementor/parts.php
+msgid "Preview template"
+msgstr ""
+
 #: inc/admin/options.php
 msgid "Primary"
 msgstr ""
@@ -1095,6 +1516,7 @@ msgid "Primary dark"
 msgstr ""
 
 #: inc/admin/demo-import.php
+#: inc/elementor/widgets/header.php
 #: inc/setup.php
 #: template-parts/header/default.php
 msgid "Primary menu"
@@ -1170,9 +1592,14 @@ msgstr ""
 msgid "Quote slider/grid with rating stars, client name, role and avatar."
 msgstr ""
 
+#: inc/elementor/widgets/testimonials.php
+msgid "Quote typography"
+msgstr ""
+
 #: inc/elementor/widgets/about.php
 #: inc/elementor/widgets/accordion.php
 #: inc/elementor/widgets/cta.php
+#: inc/elementor/widgets/footer.php
 #: inc/elementor/widgets/posts.php
 #: inc/elementor/widgets/projects.php
 #: inc/elementor/widgets/testimonials.php
@@ -1217,7 +1644,12 @@ msgid "Role / position"
 msgstr ""
 
 #: inc/elementor/widgets/team.php
+#: inc/elementor/widgets/testimonials.php
 msgid "Role colour"
+msgstr ""
+
+#: inc/elementor/widgets/team.php
+msgid "Role typography"
 msgstr ""
 
 #: inc/demo-content.php
@@ -1236,12 +1668,17 @@ msgstr ""
 msgid "Schema-ready accordion with smooth expand animation and single-open mode."
 msgstr ""
 
+#: inc/elementor/widgets/header.php
 #: template-parts/header/default.php
 msgid "Search"
 msgstr ""
 
 #: inc/post-types.php
 msgid "Search projects"
+msgstr ""
+
+#: inc/elementor/parts.php
+msgid "Search templates"
 msgstr ""
 
 #: inc/admin/demo-import.php
@@ -1262,6 +1699,18 @@ msgstr ""
 
 #: inc/elementor/class-abidar-widget-base.php
 msgid "Section"
+msgstr ""
+
+#: inc/elementor/class-abidar-widget-base.php
+msgid "Section background"
+msgstr ""
+
+#: inc/elementor/class-abidar-widget-base.php
+msgid "Section border"
+msgstr ""
+
+#: inc/elementor/class-abidar-widget-base.php
+msgid "Section box shadow"
 msgstr ""
 
 #: inc/elementor/class-abidar-widget-base.php
@@ -1317,6 +1766,15 @@ msgstr ""
 msgid "Show category filter"
 msgstr ""
 
+#: inc/elementor/widgets/footer.php
+msgid "Show contact block"
+msgstr ""
+
+#: inc/elementor/widgets/header.php
+#: inc/elementor/widgets/topbar.php
+msgid "Show email"
+msgstr ""
+
 #: inc/elementor/widgets/services.php
 msgid "Show feature list"
 msgstr ""
@@ -1330,11 +1788,17 @@ msgid "Show form"
 msgstr ""
 
 #: inc/admin/options.php
+#: inc/elementor/widgets/header.php
+#: inc/elementor/widgets/topbar.php
 msgid "Show language switcher"
 msgstr ""
 
 #: inc/elementor/widgets/contact.php
 msgid "Show map"
+msgstr ""
+
+#: inc/elementor/widgets/footer.php
+msgid "Show newsletter"
 msgstr ""
 
 #: inc/admin/options.php
@@ -1345,12 +1809,27 @@ msgstr ""
 msgid "Show numbers instead of icons"
 msgstr ""
 
+#: inc/elementor/widgets/footer.php
+msgid "Show pattern overlay"
+msgstr ""
+
+#: inc/elementor/widgets/header.php
+#: inc/elementor/widgets/topbar.php
+msgid "Show phone"
+msgstr ""
+
 #: inc/elementor/widgets/hero.php
 msgid "Show scroll cue"
 msgstr ""
 
 #: inc/admin/options.php
+#: inc/elementor/widgets/header.php
 msgid "Show search"
+msgstr ""
+
+#: inc/elementor/widgets/footer.php
+#: inc/elementor/widgets/topbar.php
+msgid "Show social icons"
 msgstr ""
 
 #: inc/elementor/widgets/hero.php
@@ -1358,7 +1837,12 @@ msgid "Show stats"
 msgstr ""
 
 #: inc/admin/options.php
+#: inc/elementor/widgets/header.php
 msgid "Show top bar"
+msgstr ""
+
+#: inc/elementor/widgets/topbar.php
+msgid "Show working hours"
 msgstr ""
 
 #: inc/elementor/widgets/services.php
@@ -1370,6 +1854,10 @@ msgid "Shown next to the blog archive and single posts."
 msgstr ""
 
 #: inc/elementor/widgets/about.php
+msgid "Signature colour"
+msgstr ""
+
+#: inc/elementor/widgets/about.php
 msgid "Signature name"
 msgstr ""
 
@@ -1377,8 +1865,24 @@ msgstr ""
 msgid "Signature role"
 msgstr ""
 
+#: inc/elementor/widgets/about.php
+msgid "Signature typography"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Site footer"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "Site header"
+msgstr ""
+
 #: template-parts/header/default.php
 msgid "Skip to content"
+msgstr ""
+
+#: inc/elementor/widgets/footer.php
+msgid "Social icons"
 msgstr ""
 
 #: inc/elementor/widgets/projects.php
@@ -1386,11 +1890,16 @@ msgstr ""
 msgid "Source"
 msgstr ""
 
+#: inc/elementor/widgets/topbar.php
+msgid "Space between"
+msgstr ""
+
 #: inc/elementor/widgets/marquee.php
 msgid "Speed (seconds per loop)"
 msgstr ""
 
 #: inc/admin/options.php
+#: inc/elementor/widgets/header.php
 msgid "Split (menu – logo – menu)"
 msgstr ""
 
@@ -1403,8 +1912,10 @@ msgid "Stars colour"
 msgstr ""
 
 #: inc/elementor/class-abidar-widget-base.php
+#: inc/elementor/widgets/header.php
 #: inc/elementor/widgets/lang-switcher.php
 #: inc/elementor/widgets/team.php
+#: inc/elementor/widgets/topbar.php
 msgid "Start"
 msgstr ""
 
@@ -1414,6 +1925,14 @@ msgstr ""
 
 #: inc/meta-boxes.php
 msgid "Starting price label (optional)"
+msgstr ""
+
+#: inc/elementor/widgets/hero.php
+msgid "Stat label typography"
+msgstr ""
+
+#: inc/elementor/widgets/hero.php
+msgid "Stat number typography"
 msgstr ""
 
 #: inc/elementor/widgets/hero.php
@@ -1437,10 +1956,19 @@ msgid "Step"
 msgstr ""
 
 #: inc/elementor/widgets/process.php
+msgid "Step text typography"
+msgstr ""
+
+#: inc/elementor/widgets/process.php
+msgid "Step title typography"
+msgstr ""
+
+#: inc/elementor/widgets/process.php
 msgid "Steps"
 msgstr ""
 
 #: inc/admin/options.php
+#: inc/elementor/widgets/header.php
 msgid "Sticky header"
 msgstr ""
 
@@ -1450,6 +1978,10 @@ msgstr ""
 
 #: inc/ajax.php
 msgid "Subject"
+msgstr ""
+
+#: inc/elementor/widgets/footer.php
+msgid "Subscribe"
 msgstr ""
 
 #: inc/elementor/widgets/page-title.php
@@ -1476,6 +2008,10 @@ msgstr ""
 
 #: inc/elementor/widgets/projects.php
 msgid "Surface background"
+msgstr ""
+
+#: inc/elementor/widgets/lang-switcher.php
+msgid "Switcher typography"
 msgstr ""
 
 #: inc/elementor/widgets/team.php
@@ -1526,9 +2062,12 @@ msgstr ""
 msgid "Text alignment"
 msgstr ""
 
+#: inc/elementor/widgets/footer.php
+#: inc/elementor/widgets/header.php
 #: inc/elementor/widgets/lang-switcher.php
 #: inc/elementor/widgets/marquee.php
 #: inc/elementor/widgets/process.php
+#: inc/elementor/widgets/topbar.php
 msgid "Text colour"
 msgstr ""
 
@@ -1570,7 +2109,18 @@ msgid "Title colour"
 msgstr ""
 
 #: inc/elementor/class-abidar-widget-base.php
+#: inc/elementor/widgets/cta.php
+#: inc/elementor/widgets/hero.php
+#: inc/elementor/widgets/page-title.php
+#: inc/elementor/widgets/projects.php
+#: inc/elementor/widgets/services.php
 msgid "Title typography"
+msgstr ""
+
+#: inc/admin/options.php
+#: inc/elementor/widgets/header.php
+#: inc/elementor/widgets/topbar.php
+msgid "Top bar"
 msgstr ""
 
 #: inc/admin/options.php
@@ -1582,6 +2132,7 @@ msgid "Top bar menu"
 msgstr ""
 
 #: inc/admin/options.php
+#: inc/elementor/widgets/header.php
 msgid "Top bar note"
 msgstr ""
 
@@ -1589,11 +2140,22 @@ msgstr ""
 msgid "Top bar phone"
 msgstr ""
 
+#: inc/elementor/widgets/footer.php
+msgid "Top border colour"
+msgstr ""
+
 #: inc/admin/options.php
 msgid "Transparent header on hero pages"
 msgstr ""
 
+#: inc/elementor/widgets/header.php
+msgid "Transparent over hero"
+msgstr ""
+
 #: inc/admin/options.php
+#: inc/elementor/widgets/footer.php
+#: inc/elementor/widgets/header.php
+#: inc/elementor/widgets/topbar.php
 msgid "Typography"
 msgstr ""
 
@@ -1603,6 +2165,10 @@ msgstr ""
 
 #: inc/elementor/widgets/page-title.php
 msgid "Use the current page title"
+msgstr ""
+
+#: inc/elementor/widgets/contact.php
+msgid "Value typography"
 msgstr ""
 
 #: inc/admin/options.php
@@ -1615,6 +2181,18 @@ msgstr ""
 
 #: inc/post-types.php
 msgid "View project"
+msgstr ""
+
+#: inc/admin/options.php
+msgid "View site"
+msgstr ""
+
+#: inc/elementor/widgets/topbar.php
+msgid "Visitors can close the bar for the session."
+msgstr ""
+
+#: comments.php
+msgid "Website"
 msgstr ""
 
 #: inc/demo-content.php
@@ -1660,4 +2238,8 @@ msgstr ""
 
 #: inc/elementor/init.php
 msgid "install Elementor to unlock the 15 dedicated widgets and the header/footer builder."
+msgstr ""
+
+#: inc/elementor/helpers.php
+msgid "— Default menu —"
 msgstr ""

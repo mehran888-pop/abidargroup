@@ -59,7 +59,17 @@ add_action( 'admin_menu', 'abidar_admin_menu' );
  * @param string $hook Current admin page.
  */
 function abidar_admin_assets( $hook ) {
-	if ( false === strpos( $hook, 'abidar' ) ) {
+	// Scope styles/scripts to the theme's own screens only. The old check
+	// matched any hook containing "abidar", including unrelated plugins.
+	$pages = array(
+		'toplevel_page_abidar-options',
+		'abidar-options_page_abidar-demo-import',
+		'abidar-options_page_abidar-widgets-help',
+	);
+
+	$is_abidar = in_array( $hook, $pages, true ) || false !== strpos( (string) $hook, 'abidar-' );
+
+	if ( ! $is_abidar ) {
 		return;
 	}
 
@@ -67,6 +77,20 @@ function abidar_admin_assets( $hook ) {
 	wp_enqueue_style( 'wp-color-picker' );
 	wp_enqueue_style( 'abidar-admin', ABIDAR_URI . '/assets/css/admin.css', array( 'wp-color-picker' ), ABIDAR_VERSION );
 	wp_enqueue_script( 'abidar-admin', ABIDAR_URI . '/assets/js/admin.js', array( 'jquery', 'wp-color-picker' ), ABIDAR_VERSION, true );
+
+	// Expose the active palette to the stylesheet as CSS variables so the panel
+	// always matches the site, even when the admin is opened RTL.
+	$css = sprintf(
+		':root{--ab-primary:%1$s;--ab-primary-dark:%2$s;--ab-accent:%3$s;--ab-ink:%4$s;--ab-body:%5$s;--ab-surface:%6$s;--ab-dark:%7$s;}',
+		esc_attr( abidar_option( 'color_primary', '#0c6a5a' ) ),
+		esc_attr( abidar_option( 'color_primary_dark', '#084a40' ) ),
+		esc_attr( abidar_option( 'color_accent', '#c8912f' ) ),
+		esc_attr( abidar_option( 'color_ink', '#101b1c' ) ),
+		esc_attr( abidar_option( 'color_body', '#4a5758' ) ),
+		esc_attr( abidar_option( 'color_surface', '#f5f4f0' ) ),
+		esc_attr( abidar_option( 'color_dark', '#0b1516' ) )
+	);
+	wp_add_inline_style( 'abidar-admin', $css );
 }
 add_action( 'admin_enqueue_scripts', 'abidar_admin_assets' );
 
@@ -312,6 +336,8 @@ function abidar_render_options_page() {
 
 	$tabs    = abidar_option_tabs();
 	$active  = isset( $_GET['tab'] ) ? sanitize_key( wp_unslash( $_GET['tab'] ) ) : 'branding'; // phpcs:ignore WordPress.Security.NonceVerification
+	$alias   = array( 'colours' => 'colors', 'language' => 'language' );
+	$active  = isset( $alias[ $active ] ) ? $alias[ $active ] : $active;
 	$active  = isset( $tabs[ $active ] ) ? $active : 'branding';
 	$options = get_option( 'abidar_options', array() );
 	$options = is_array( $options ) ? $options : array();
@@ -345,7 +371,8 @@ function abidar_render_options_page() {
 				<?php endforeach; ?>
 			</nav>
 
-			<form class="ab-admin__form" method="post" action="<?php echo esc_url( admin_url( 'options.php' ) ); ?>">
+			<form class="ab-admin__form" method="post" action="<?php echo esc_url( admin_url( 'options.php' ) ); ?>"
+				data-confirm-discard="<?php esc_attr_e( 'Discard unsaved changes?', 'abidar' ); ?>">
 				<?php settings_fields( 'abidar_options_group' ); ?>
 				<input type="hidden" name="abidar_options[_tab]" value="<?php echo esc_attr( $active ); ?>">
 
@@ -379,7 +406,20 @@ function abidar_render_options_page() {
 					</tbody>
 				</table>
 
-				<?php submit_button( __( 'Save changes', 'abidar' ) ); ?>
+				<div class="ab-admin__actions">
+					<?php submit_button( __( 'Save changes', 'abidar' ), 'primary', 'submit', false ); ?>
+					<?php if ( 'language' !== $active ) : ?>
+						<a class="button ab-admin__secondary" href="<?php echo esc_url( home_url( '/' ) ); ?>" target="_blank" rel="noopener">
+							<?php esc_html_e( 'View site', 'abidar' ); ?>
+						</a>
+					<?php endif; ?>
+					<a class="ab-admin__link" href="<?php echo esc_url( admin_url( 'admin.php?page=abidar-demo-import' ) ); ?>">
+						<?php esc_html_e( 'Demo content', 'abidar' ); ?>
+					</a>
+					<a class="ab-admin__link" href="<?php echo esc_url( admin_url( 'admin.php?page=abidar-widgets-help' ) ); ?>">
+						<?php esc_html_e( 'Elementor widgets', 'abidar' ); ?>
+					</a>
+				</div>
 			</form>
 		</div>
 	</div>
@@ -604,6 +644,10 @@ function abidar_render_language_editor( $options ) {
  */
 function abidar_render_widgets_help() {
 	$widgets = array(
+		array( 'ab-topbar', __( 'Top bar', 'abidar' ), __( 'Announcement bar with phone, email, working hours, social icons, language switcher and an optional dismiss button.', 'abidar' ) ),
+		array( 'ab-header', __( 'Site header', 'abidar' ), __( 'Complete header: top bar, logo, up to three-level menu, language switcher, search, CTA and mobile drawer. Drop it into a Header template — no Elementor Pro needed.', 'abidar' ) ),
+		array( 'ab-footer', __( 'Site footer', 'abidar' ), __( 'Complete footer: brand column, two menu columns, contact block, newsletter, social bar and legal row. Drop it into a Footer template.', 'abidar' ) ),
+		array( 'ab-mega-menu', __( 'Advanced nav / mega menu', 'abidar' ), __( 'Multi-column mega panel with icon and description per link, an optional CTA card, and a mobile drawer. Works from a WordPress menu or a repeater.', 'abidar' ) ),
 		array( 'ab-hero', __( 'Hero slider', 'abidar' ), __( 'Full-height hero with background image/video, eyebrow, headline, two buttons, stat strip and scroll cue. Every colour, size and spacing is an Elementor control.', 'abidar' ) ),
 		array( 'ab-services', __( 'Services grid', 'abidar' ), __( 'Icon cards or image cards for services, with hover states, read-more links and optional category filter.', 'abidar' ) ),
 		array( 'ab-about', __( 'About split', 'abidar' ), __( 'Image + text split section with checklist, signature and a floating "years of experience" badge.', 'abidar' ) ),
@@ -643,8 +687,15 @@ function abidar_render_widgets_help() {
 			</tbody>
 		</table>
 
-		<h2 style="margin-top:2rem"><?php esc_html_e( 'Header & footer with Elementor', 'abidar' ); ?></h2>
-		<p><?php esc_html_e( 'Go to Templates → Theme Builder → Header (or Footer) → Add New, design it, and publish. The theme automatically replaces its default header/footer. The same works for single project and archive templates.', 'abidar' ); ?></p>
+		<h2 style="margin-top:2rem"><?php esc_html_e( 'Header & footer with Elementor Free', 'abidar' ); ?></h2>
+		<p><?php esc_html_e( 'Elementor Free has no Theme Builder — this theme adds its own. Open Abidar → Headers (or Footers), click “Add new”, then “Edit with Elementor” and drag in the “Abidar site header” / “Abidar site footer” widgets. Publish, and the theme renders your template everywhere instead of the built-in header and footer.', 'abidar' ); ?></p>
+		<p><?php esc_html_e( 'A ready-made header and footer are created automatically the first time Elementor is active, so you can start by editing rather than building from scratch. If you also use Elementor Pro, its Theme Builder still takes priority.', 'abidar' ); ?></p>
+
+		<p style="margin-top:1rem">
+			<a class="button button-primary" href="<?php echo esc_url( admin_url( 'edit.php?post_type=abidar_header' ) ); ?>"><?php esc_html_e( 'Edit header', 'abidar' ); ?></a>
+			<a class="button" href="<?php echo esc_url( admin_url( 'edit.php?post_type=abidar_footer' ) ); ?>"><?php esc_html_e( 'Edit footer', 'abidar' ); ?></a>
+			<a class="button" href="<?php echo esc_url( admin_url( 'admin.php?page=abidar-options' ) ); ?>"><?php esc_html_e( 'Go to theme options', 'abidar' ); ?></a>
+		</p>
 	</div>
 	<?php
 }

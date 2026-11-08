@@ -92,6 +92,15 @@ class Abidar_Widget_Lang_Switcher extends Abidar_Widget_Base {
 			)
 		);
 
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			array(
+				'name'     => 'item_typography',
+				'label'    => esc_html__( 'Item typography', 'abidar' ),
+				'selector' => '{{WRAPPER}} .ab-lang__item a, {{WRAPPER}} .ab-lang__toggle',
+			)
+		);
+
 		$this->add_control(
 			'item_color',
 			array(
@@ -122,7 +131,8 @@ class Abidar_Widget_Lang_Switcher extends Abidar_Widget_Base {
 		$this->add_group_control(
 			Group_Control_Typography::get_type(),
 			array(
-				'name'     => 'item_typography',
+				'name'     => 'switcher_typography',
+				'label'     => esc_html__( 'Switcher typography', 'abidar' ),
 				'selector' => '{{WRAPPER}} .ab-lang__item a',
 			)
 		);
