@@ -1,0 +1,295 @@
+/* Documentation page (preview/docs.html) — theme tokens only. */
+
+.ab-docs {
+  --docs-max: 900px;
+  background: var(--ab-surface);
+  color: var(--ab-body);
+}
+
+.ab-docs .ab-preview-bar { position: sticky; top: 0; }
+
+/* ——— Hero ——————————————————————————————— */
+.ab-docs-hero {
+  position: relative;
+  padding: clamp(3rem, 7vw, 5.5rem) 0 clamp(2.5rem, 6vw, 4rem);
+  background:
+    radial-gradient(900px 420px at 82% -10%, rgba(200, 145, 47, 0.26), transparent 62%),
+    radial-gradient(760px 460px at 12% 8%, rgba(12, 106, 90, 0.42), transparent 66%),
+    linear-gradient(150deg, #0b1516, #102523 60%, #0b1516);
+  color: #fff;
+  overflow: hidden;
+}
+
+.ab-docs-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+  background-size: 68px 100%;
+  mask-image: linear-gradient(to bottom, transparent, #000 30%, transparent);
+  pointer-events: none;
+}
+
+.ab-docs-hero .ab-container { position: relative; z-index: 1; }
+
+.ab-docs-hero h1 {
+  font-size: clamp(2rem, 4.4vw, 3.2rem);
+  line-height: 1.15;
+  margin: 0.6rem 0 1rem;
+  max-width: 22ch;
+  color: #fff;
+}
+
+.ab-docs-hero .ab-lead {
+  max-width: 60ch;
+  color: rgba(233, 240, 238, 0.82);
+  font-size: clamp(1rem, 1.6vw, 1.14rem);
+  margin: 0;
+}
+
+/* ——— Layout ——————————————————————————————— */
+.ab-docs-main { padding-block: clamp(2rem, 5vw, 3.5rem) clamp(3rem, 7vw, 5rem); }
+
+.ab-docs-toc {
+  max-width: var(--docs-max);
+  margin: 0 auto clamp(2rem, 4vw, 3rem);
+  padding: 0.85rem 1rem;
+  background: #fff;
+  border: 1px solid var(--ab-line);
+  border-radius: var(--ab-radius);
+  box-shadow: 0 12px 30px rgba(16, 27, 28, 0.05);
+}
+
+.ab-docs-toc ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: toc;
+}
+
+.ab-docs-toc a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--ab-radius-pill);
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: var(--ab-ink);
+  background: rgba(12, 106, 90, 0.07);
+  transition: background 0.2s, color 0.2s;
+}
+
+.ab-docs-toc a:hover { background: var(--ab-primary); color: #fff; }
+
+.ab-docs-section {
+  max-width: var(--docs-max);
+  margin: 0 auto clamp(2.5rem, 6vw, 4rem);
+  padding-bottom: clamp(1.5rem, 4vw, 2.5rem);
+  border-bottom: 1px solid var(--ab-line);
+  scroll-margin-top: 90px;
+}
+
+.ab-docs-section:last-of-type { border-bottom: 0; }
+
+.ab-docs-section > h2 {
+  font-size: clamp(1.35rem, 2.6vw, 1.8rem);
+  margin: 0 0 1rem;
+  color: var(--ab-ink);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.ab-docs-section > h2::before {
+  content: '';
+  width: 4px;
+  height: 1.1em;
+  border-radius: 4px;
+  background: linear-gradient(var(--ab-primary), var(--ab-accent));
+  flex: none;
+}
+
+.ab-docs-section p { margin: 0 0 1rem; line-height: 1.85; }
+
+.ab-docs-sub {
+  font-size: 1.02rem;
+  margin: 1.9rem 0 0.7rem;
+  color: var(--ab-ink);
+}
+
+.ab-docs-sub + p { margin-top: 0; }
+
+.ab-docs-note {
+  padding: 0.85rem 1rem;
+  border-inline-start: 3px solid var(--ab-accent);
+  background: rgba(200, 145, 47, 0.09);
+  border-radius: 0 var(--ab-radius-sm) var(--ab-radius-sm) 0;
+  font-size: 0.9rem;
+  color: #6a5220;
+}
+
+[dir='rtl'] .ab-docs-note { border-radius: var(--ab-radius-sm) 0 0 var(--ab-radius-sm); }
+
+/* ——— Steps ——————————————————————————————— */
+.ab-docs-steps {
+  list-style: none;
+  margin: 0 0 1.25rem;
+  padding: 0;
+  counter-reset: step;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.ab-docs-steps li {
+  counter-increment: step;
+  position: relative;
+  padding: 0.95rem 1rem 0.95rem 3.4rem;
+  background: #fff;
+  border: 1px solid var(--ab-line);
+  border-radius: var(--ab-radius);
+  display: grid;
+  gap: 0.2rem;
+}
+
+[dir='rtl'] .ab-docs-steps li { padding: 0.95rem 3.4rem 0.95rem 1rem; }
+
+.ab-docs-steps li::before {
+  content: counter(step);
+  position: absolute;
+  inset-inline-start: 0.95rem;
+  top: 0.95rem;
+  width: 1.7rem;
+  height: 1.7rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--ab-primary);
+  color: #fff;
+  font-family: var(--ab-font-head);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.ab-docs-steps strong { color: var(--ab-ink); font-size: 0.96rem; }
+.ab-docs-steps span { font-size: 0.9rem; line-height: 1.7; }
+
+/* ——— Cards & grids ——————————————————————— */
+.ab-docs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 0.9rem;
+  margin-block: 1.25rem;
+}
+
+.ab-docs-card {
+  padding: 1.2rem;
+  background: #fff;
+  border: 1px solid var(--ab-line);
+  border-radius: var(--ab-radius);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ab-docs-card:hover { transform: translateY(-2px); box-shadow: 0 16px 34px rgba(16, 27, 28, 0.08); }
+
+.ab-docs-card__flag { font-size: 1.6rem; line-height: 1; }
+.ab-docs-card h3 { font-size: 1rem; margin: 0.55rem 0 0.35rem; color: var(--ab-ink); }
+.ab-docs-card p { margin: 0; font-size: 0.86rem; line-height: 1.65; }
+
+.ab-docs-grid--tight { grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 0.65rem; }
+
+.ab-docs-mini {
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.8rem 0.95rem;
+  background: #fff;
+  border: 1px solid var(--ab-line);
+  border-radius: var(--ab-radius-sm);
+}
+
+.ab-docs-mini strong { font-size: 0.9rem; color: var(--ab-ink); }
+.ab-docs-mini span { font-size: 0.79rem; line-height: 1.6; }
+
+/* ——— Code ——————————————————————————————— */
+.ab-docs-code {
+  margin: 1rem 0;
+  padding: 1rem 1.15rem;
+  background: linear-gradient(150deg, #0d1b1c, #102a27);
+  color: #d9efe9;
+  border-radius: var(--ab-radius);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.82rem;
+  line-height: 1.75;
+  overflow-x: auto;
+  direction: ltr;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.ab-docs-code code { font: inherit; background: none; padding: 0; color: inherit; }
+.ab-docs-code--tree { font-size: 0.78rem; }
+.ab-docs-code--tree span { color: #8fb9ae; }
+
+/* ——— Table ——————————————————————————————— */
+.ab-docs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-block: 1.25rem;
+  background: #fff;
+  border: 1px solid var(--ab-line);
+  border-radius: var(--ab-radius);
+  overflow: hidden;
+  font-size: 0.86rem;
+}
+
+.ab-docs-table th,
+.ab-docs-table td {
+  padding: 0.7rem 0.9rem;
+  text-align: start;
+  border-bottom: 1px solid var(--ab-line);
+  vertical-align: top;
+}
+
+.ab-docs-table th {
+  background: rgba(12, 106, 90, 0.06);
+  color: var(--ab-ink);
+  font-family: var(--ab-font-head);
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.ab-docs-table tr:last-child td { border-bottom: 0; }
+.ab-docs-table tbody tr:hover { background: rgba(12, 106, 90, 0.035); }
+.ab-docs-table code {
+  font-size: 0.78rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 5px;
+  background: rgba(12, 106, 90, 0.09);
+  color: var(--ab-primary-dark);
+  direction: ltr;
+  display: inline-block;
+}
+
+/* ——— Checklist ——————————————————————————— */
+.ab-docs .ab-checklist { margin-block: 1.25rem; }
+
+/* ——— Footer ——————————————————————————————— */
+.ab-docs-foot {
+  padding-block: 1.6rem;
+  background: var(--ab-dark);
+  color: rgba(233, 240, 238, 0.62);
+  font-size: 0.82rem;
+}
+
+.ab-docs-foot p { margin: 0; text-align: center; }
+
+@media (max-width: 720px) {
+  .ab-docs-section { scroll-margin-top: 70px; }
+  .ab-docs-toc ol { gap: 0.3rem; }
+  .ab-docs-toc a { font-size: 0.78rem; padding: 0.35rem 0.7rem; }
+  .ab-docs-table { display: block; overflow-x: auto; white-space: nowrap; }
+}

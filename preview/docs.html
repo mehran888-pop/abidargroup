@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl" class="ab-locale-fa">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>راهنمای قالب عبی‌دار — Abidar Theme Docs</title>
+  <meta name="description" content="راهنمای نصب و استفاده از قالب وردپرس گروه عبی‌دار: موتور سه‌زبانه، ۱۸ المان المنتور، پنل تنظیمات و محتوای نمونه.">
+
+  <link rel="stylesheet" href="../assets/css/fonts.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/widgets.css">
+  <link rel="stylesheet" href="assets/css/preview.css">
+  <link rel="stylesheet" href="assets/css/docs.css">
+</head>
+<body class="ab-theme ab-lang-fa ab-dir-rtl ab-docs">
+
+<div class="ab-preview-bar">
+  <div class="ab-preview-bar__inner">
+    <span class="ab-preview-bar__brand">
+      <span class="ab-preview-bar__dot"></span>
+      <strong>Abidar</strong>
+      <em data-bar-label>راهنمای قالب · Theme documentation</em>
+    </span>
+
+    <div class="ab-preview-bar__actions">
+      <a class="ab-preview-bar__btn" href="index.html" data-bar-widgets>↩ پیش‌نمایش سایت / Live preview</a>
+      <div class="ab-preview-bar__langs" role="group" aria-label="Language">
+        <button type="button" data-lang="fa" class="is-active">FA</button>
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="zh">ZH</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<header class="ab-docs-hero">
+  <div class="ab-container">
+    <span class="ab-eyebrow ab-eyebrow--light" data-copy="docs_eyebrow">Abidar Group · v1.0.0</span>
+    <h1 data-copy="docs_title">راهنمای قالب عبی‌دار</h1>
+    <p class="ab-lead" data-copy="docs_text">قالب شرکتی سه‌زبانه برای معدن، نفت و گاز و سنگ طبیعی — با ۱۸ المان اختصاصی المنتور و پنل تنظیمات کامل در پیشخوان.</p>
+  </div>
+</header>
+
+<main class="ab-docs-main">
+  <div class="ab-container">
+
+    <nav class="ab-docs-toc" aria-label="فهرست">
+      <ol>
+        <li><a href="#install" data-copy="docs_toc_install">نصب</a></li>
+        <li><a href="#languages" data-copy="docs_toc_languages">سه‌زبانه</a></li>
+        <li><a href="#widgets" data-copy="docs_toc_widgets">المان‌های المنتور</a></li>
+        <li><a href="#options" data-copy="docs_toc_options">تنظیمات قالب</a></li>
+        <li><a href="#demo" data-copy="docs_toc_demo">محتوای نمونه</a></li>
+        <li><a href="#files" data-copy="docs_toc_files">ساختار فایل‌ها</a></li>
+      </ol>
+    </nav>
+
+    <!-- 1. Install -->
+    <section class="ab-docs-section" id="install">
+      <h2 data-copy="docs_install_title">۱ · نصب و راه‌اندازی</h2>
+      <ol class="ab-docs-steps">
+        <li>
+          <strong data-copy="docs_install_1_t">کپی قالب</strong>
+          <span data-copy="docs_install_1">پوشه قالب را در wp-content/themes/abidar قرار دهید یا فایل ZIP را از نمایش ← پوسته‌ها ← افزودن نصب کنید.</span>
+        </li>
+        <li>
+          <strong data-copy="docs_install_2_t">فعال‌سازی</strong>
+          <span data-copy="docs_install_2">پیشخوان ← نمایش ← پوسته‌ها ← «Abidar Group» را فعال کنید.</span>
+        </li>
+        <li>
+          <strong data-copy="docs_install_3_t">محتوای نمونه</strong>
+          <span data-copy="docs_install_3">به Abidar ← محتوای نمونه بروید و «نصب محتوای نمونه» را بزنید: ۷ صفحه، منوها، ۶ پروژه، ۴ خدمت، ۴ عضو تیم، ۳ نظر و ۳ مطلب ساخته می‌شود.</span>
+        </li>
+        <li>
+          <strong data-copy="docs_install_4_t">شخصی‌سازی</strong>
+          <span data-copy="docs_install_4">در Abidar ← تنظیمات قالب رنگ‌ها، فونت، هدر، فوتر و اطلاعات تماس را تنظیم کنید.</span>
+        </li>
+      </ol>
+      <p class="ab-docs-note" data-copy="docs_requirements">نیازمندی‌ها: وردپرس ۶.۰+، PHP ۷.۴+ و المنتور (نسخه رایگان برای ویجت‌ها، نسخه پرو برای ساخت هدر و فوتر).</p>
+    </section>
+
+    <!-- 2. Languages -->
+    <section class="ab-docs-section" id="languages">
+      <h2 data-copy="docs_lang_title">۲ · موتور سه‌زبانه</h2>
+      <p data-copy="docs_lang_text">موتور زبان داخل قالب است و به افزونه ترجمه نیاز ندارد. زبان با پارامتر lang در نشانی عوض می‌شود، در کوکی ذخیره می‌شود، از زبان مرورگر بازدیدکننده حدس زده می‌شود و dir/lang سند به‌همراه hreflang خودکار تنظیم می‌گردد.</p>
+
+      <div class="ab-docs-grid">
+        <div class="ab-docs-card">
+          <span class="ab-docs-card__flag">🇮🇷</span>
+          <h3>فارسی · fa</h3>
+          <p data-copy="docs_lang_fa">راست‌به‌چپ، فونت وزیرمتن، اعداد فارسی.</p>
+        </div>
+        <div class="ab-docs-card">
+          <span class="ab-docs-card__flag">🇬🇧</span>
+          <h3>English · en</h3>
+          <p data-copy="docs_lang_en">چپ‌به‌راست، فونت Sora، تاریخ میلادی.</p>
+        </div>
+        <div class="ab-docs-card">
+          <span class="ab-docs-card__flag">🇨🇳</span>
+          <h3>中文 · zh</h3>
+          <p data-copy="docs_lang_zh">چپ‌به‌راست، فونت CJK سیستمی، متن‌های کامل ترجمه‌شده.</p>
+        </div>
+      </div>
+
+      <h3 class="ab-docs-sub" data-copy="docs_lang_edit_title">ویرایش متن‌ها</h3>
+      <p data-copy="docs_lang_edit">در Abidar ← تنظیمات قالب ← زبان‌ها یک جدول سه‌ستونه با ۲۶۶ رشته وجود دارد: هیرو، خدمات، درباره، پروژه‌ها، مراحل کار، تیم، CTA، فرم تماس، فوتر، بلاگ و پرسش‌های متداول. هر فیلد خالی به ترجمه پیش‌فرض برمی‌گردد.</p>
+
+      <pre class="ab-docs-code"><code>// متن زبان فعال
+abidar_copy( 'hero_title' );
+
+// ترجمه چینی، مستقل از زبان فعال
+Abidar_Strings::get( 'nav_about', 'zh' );
+
+// سوییچر زبان با استایل دلخواه
+Abidar_Multilingual::instance()->switcher( [ 'style' =&gt; 'dropdown' ] );</code></pre>
+    </section>
+
+    <!-- 3. Widgets -->
+    <section class="ab-docs-section" id="widgets">
+      <h2 data-copy="docs_widgets_title">۳ · ۱۸ المان اختصاصی المنتور</h2>
+      <p data-copy="docs_widgets_text">همه ویجت‌ها زیر دسته «Abidar» در پنل المنتور قرار می‌گیرند و تب Style کامل دارند: تایپوگرافی، رنگ، فاصله، حاشیه، سایه و کنترل‌های ریسپانسیو.</p>
+
+      <table class="ab-docs-table">
+        <thead>
+          <tr>
+            <th data-copy="docs_table_widget">ویجت</th>
+            <th data-copy="docs_table_id">شناسه</th>
+            <th data-copy="docs_table_note">ویژگی</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>هیرو</td><td><code>ab-hero</code></td><td data-copy="docs_w_hero">تصویر پس‌زمینه، Ken Burns، دو دکمه، نوار آمار</td></tr>
+          <tr><td>شبکه خدمات</td><td><code>ab-services</code></td><td data-copy="docs_w_services">کارت آیکونی یا تصویری، ۱ تا ۴ ستون</td></tr>
+          <tr><td>درباره ما</td><td><code>ab-about</code></td><td data-copy="docs_w_about">تصویر + متن، چک‌لیست، بج تجربه، امضا</td></tr>
+          <tr><td>شمارنده</td><td><code>ab-counters</code></td><td data-copy="docs_w_counters">انیمیشن ورود به دید، پسوند، اعشار</td></tr>
+          <tr><td>پروژه‌ها</td><td><code>ab-projects</code></td><td data-copy="docs_w_projects">از CPT یا دمو، فیلتر دسته، کارت شاخص</td></tr>
+          <tr><td>مراحل کار</td><td><code>ab-process</code></td><td data-copy="docs_w_process">تایم‌لاین ۴ مرحله‌ای</td></tr>
+          <tr><td>تیم ما</td><td><code>ab-team</code></td><td data-copy="docs_w_team">از CPT یا دمو، شبکه‌های اجتماعی</td></tr>
+          <tr><td>نظرات</td><td><code>ab-testimonials</code></td><td data-copy="docs_w_testimonials">گرید یا اسلایدر، ستاره، آواتار</td></tr>
+          <tr><td>دعوت به اقدام</td><td><code>ab-cta</code></td><td data-copy="docs_w_cta">باند تیره با تصویر و شماره تماس</td></tr>
+          <tr><td>تماس</td><td><code>ab-contact</code></td><td data-copy="docs_w_contact">کارت‌های تماس + فرم AJAX با honeypot</td></tr>
+          <tr><td>نوار لوگو</td><td><code>ab-marquee</code></td><td data-copy="docs_w_marquee">حرکت بی‌نهایت، توقف با هاور</td></tr>
+          <tr><td>آخرین مطالب</td><td><code>ab-posts</code></td><td data-copy="docs_w_posts">فیلتر دسته، کارت مجله‌ای</td></tr>
+          <tr><td>آکاردئون</td><td><code>ab-accordion</code></td><td data-copy="docs_w_accordion">تک‌بازشو، انیمیشن ارتفاع</td></tr>
+          <tr><td>سوییچر زبان</td><td><code>ab-lang-switcher</code></td><td data-copy="docs_w_lang">اینلاین یا دراپ‌داون، فلگ</td></tr>
+          <tr><td>عنوان صفحه</td><td><code>ab-page-title</code></td><td data-copy="docs_w_pagetitle">هیرو داخلی + بردکرامب</td></tr>
+        </tbody>
+      </table>
+
+      <h3 class="ab-docs-sub" data-copy="docs_hf_title">هدر و فوتر با المنتور</h3>
+      <p data-copy="docs_hf_text">در قالب‌ها ← Theme Builder یک Header و یک Footer بسازید؛ قالب به‌طور خودکار جای هدر و فوتر پیش‌فرض را می‌دهد. همین رفتار برای Single و Archive هم فعال است.</p>
+
+      <h3 class="ab-docs-sub" data-copy="docs_palette_title">رنگ‌های گلوبال</h3>
+      <p data-copy="docs_palette">پالت قالب (Primary، Accent، Ink، Sand) یک‌بار در Elementor Global Colors ثبت می‌شود تا در همه ویجت‌ها به‌عنوان سواچ قابل استفاده باشد.</p>
+    </section>
+
+    <!-- 4. Options -->
+    <section class="ab-docs-section" id="options">
+      <h2 data-copy="docs_options_title">۴ · پنل تنظیمات قالب</h2>
+      <p data-copy="docs_options_text">همه تنظیمات در پیشخوان وردپرس، زیر منوی Abidar، بدون نیاز به کدنویسی:</p>
+
+      <div class="ab-docs-grid ab-docs-grid--tight">
+        <div class="ab-docs-mini"><strong data-copy="opt_branding">برندینگ</strong><span data-copy="opt_branding_d">لوگو روشن و تیره، فاوآیکون، عرض لوگو</span></div>
+        <div class="ab-docs-mini"><strong data-copy="opt_colours">رنگ‌ها</strong><span data-copy="opt_colours_d">۷ رنگ که به CSS Variables تزریق می‌شوند</span></div>
+        <div class="ab-docs-mini"><strong data-copy="opt_type">تایپوگرافی</strong><span data-copy="opt_type_d">فونت متن و تیتر، اندازه پایه</span></div>
+        <div class="ab-docs-mini"><strong data-copy="opt_header">هدر</strong><span data-copy="opt_header_d">چیدمان، چسبان، شفاف، تاپ‌بار، CTA</span></div>
+        <div class="ab-docs-mini"><strong data-copy="opt_footer">فوتر</strong><span data-copy="opt_footer_d">متن درباره، کپی‌رایت، خبرنامه، شبکه‌های اجتماعی</span></div>
+        <div class="ab-docs-mini"><strong data-copy="opt_contact">اطلاعات تماس</strong><span data-copy="opt_contact_d">آدرس، تلفن، ایمیل، ساعت کاری، نقشه</span></div>
+        <div class="ab-docs-mini"><strong data-copy="opt_blog">وبلاگ و سئو</strong><span data-copy="opt_blog_d">طول خلاصه، سایدبار</span></div>
+        <div class="ab-docs-mini"><strong data-copy="opt_lang">زبان‌ها</strong><span data-copy="opt_lang_d">زبان پیش‌فرض + ویرایشگر سه‌زبانه</span></div>
+        <div class="ab-docs-mini"><strong data-copy="opt_advanced">پیشرفته</strong><span data-copy="opt_advanced_d">پری‌لودر، دکمه بازگشت به بالا، CSS سفارشی</span></div>
+      </div>
+    </section>
+
+    <!-- 5. Demo -->
+    <section class="ab-docs-section" id="demo">
+      <h2 data-copy="docs_demo_title">۵ · محتوای نمونه و این پیش‌نمایش</h2>
+      <p data-copy="docs_demo_text">این پیش‌نمایش استاتیک از همان CSS و ساختار HTML قالب استفاده می‌کند؛ بدون نیاز به وردپرس می‌توانید ظاهر، تغییر زبان و کنترل‌های ویجت‌ها را ببینید. برای دیدن نسخه واقعی، قالب را نصب و محتوای نمونه را اجرا کنید.</p>
+
+      <ul class="ab-checklist">
+        <li><span class="ab-checklist__icon">✓</span><span data-copy="docs_demo_1">قالب کامل و نصب‌شدنی با فایل‌های PHP، CSS و JS</span></li>
+        <li><span class="ab-checklist__icon">✓</span><span data-copy="docs_demo_2">۱۶۶ رشته ترجمه در سه زبان، قابل ویرایش از پیشخوان</span></li>
+        <li><span class="ab-checklist__icon">✓</span><span data-copy="docs_demo_3">۱۸ ویجت المنتور با تب Style کامل</span></li>
+        <li><span class="ab-checklist__icon">✓</span><span data-copy="docs_demo_4">۶ قالب صفحه: خانه، درباره، خدمات، پروژه‌ها، تیم، تماس</span></li>
+        <li><span class="ab-checklist__icon">✓</span><span data-copy="docs_demo_5">بلاک‌های گوتنبرگ برای هر سکشن صفحه</span></li>
+        <li><span class="ab-checklist__icon">✓</span><span data-copy="docs_demo_6">فایل ترجمه POT و ترجمه فارسی PO/MO</span></li>
+      </ul>
+
+      <p><a class="ab-btn ab-btn--primary" href="index.html" data-copy="docs_back">بازگشت به پیش‌نمایش سایت</a></p>
+    </section>
+
+    <!-- 6. Files -->
+    <section class="ab-docs-section" id="files">
+      <h2 data-copy="docs_files_title">۶ · ساختار فایل‌ها</h2>
+      <pre class="ab-docs-code ab-docs-code--tree"><code>abidar/
+├── style.css                  <span data-copy="f_tree_1">متادیتای قالب</span>
+├── functions.php              <span data-copy="f_tree_2">بوت‌استرپ</span>
+├── inc/
+│   ├── setup.php              <span data-copy="f_tree_3">پشتیبانی‌ها، منوها، سایز تصویر</span>
+│   ├── helpers.php            <span data-copy="f_tree_4">آپشن‌ها، CSS داینامیک، enqueue</span>
+│   ├── class-abidar-multilingual.php  <span data-copy="f_tree_5">موتور سه‌زبانه</span>
+│   ├── strings.php            <span data-copy="f_tree_6">دیکشنری ۲۶۶ رشته × ۳ زبان</span>
+│   ├── sections.php           <span data-copy="f_tree_7">رندر سکشن‌ها</span>
+│   ├── blocks.php             <span data-copy="f_tree_8">بلاک‌های گوتنبرگ</span>
+│   ├── post-types.php         <span data-copy="f_tree_9">پروژه، خدمت، تیم، نظر، پیام</span>
+│   ├── demo-content.php       <span data-copy="f_tree_10">محتوای نمونه</span>
+│   ├── admin/                 <span data-copy="f_tree_11">پنل تنظیمات + ایمپورت دمو</span>
+│   └── elementor/             <span data-copy="f_tree_12">کلاس پایه + ۱۸ ویجت</span>
+├── page-templates/            <span data-copy="f_tree_13">۶ قالب صفحه</span>
+├── assets/{css,js,fonts,img}/
+└── preview/                   <span data-copy="f_tree_14">همین پیش‌نمایش</span></code></pre>
+    </section>
+
+  </div>
+</main>
+
+<footer class="ab-docs-foot">
+  <div class="ab-container">
+    <p data-copy="docs_footer">قالب گروه صنعتی عبی‌دار · نسخه ۱.۰.۰ · انتشار زیر مجوز GPL v2</p>
+  </div>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/docs.js"></script>
+</body>
+</html>
